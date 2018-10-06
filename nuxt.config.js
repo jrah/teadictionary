@@ -13,6 +13,10 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
+    script: [
+      { src: 'https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js' },
+      { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
+    ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
@@ -36,8 +40,12 @@ module.exports = {
   */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    'nuxtent'
   ],
+  netlifyCms: {
+    adminPath: 'secure'
+  },
   /*
   ** Axios module configuration
   */
