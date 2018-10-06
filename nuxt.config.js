@@ -48,6 +48,11 @@ module.exports = {
       page: '/_tea',
       permalink: ':slug',
       generate: ['get', 'getAll']
+    },
+    content: {
+      page: '/_post',
+      permalink: ':year/:slug',
+      generate: ['get', 'getAll']
     }
   },
   netlifyCms: {
