@@ -7,15 +7,9 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "Teas"
-    label: "Teas"
-    delete: false # Prevent users from deleting documents in this collection
-    editor:
-      preview: false
-    files:
-      - name: "Tea"
-        label: "Tea"
-        file: "content/tea.yml"
-        description: "Teas"
-        fields:
-          - {label: "Title", name: "title", widget: "string", required: false}
+  - name: "Tea"
+    label: "Tea"
+    file: "content/tea.yml"
+    description: "Teas"
+    fields:
+      - {label: "Title", name: "title", widget: "string", required: false}
