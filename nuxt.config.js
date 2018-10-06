@@ -43,6 +43,13 @@ module.exports = {
     '@nuxtjs/axios',
     'nuxtent'
   ],
+  nuxtent: {
+    content: {
+      page: '/_page',
+      permalink: ':slug',
+      generate: ['get', 'getAll']
+    }
+  },
   netlifyCms: {
     adminPath: 'secure'
   },

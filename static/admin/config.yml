@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: jrah/teadictionary
   branch: master # Branch to update (optional; defaults to master)
 media_folder: "static/images/uploads" # Media files will be stored in the repo under images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
@@ -7,10 +8,10 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 
 collections:
   - name: "pages"
+    folder: "content/pages"
+    slug: "{{slug}}"
+    create: true
     label: "Pages"
-    files:
-      - file: content/pages/about.yml
-        label: About
-        name: about
-        fields:
-          - {label: Title, name: title, widget: string}
+    label_singular: "Pages"
+    fields:
+      - {label: Title, name: title, widget: string}
