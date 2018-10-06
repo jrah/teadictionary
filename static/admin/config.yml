@@ -7,11 +7,10 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 
 
 collections:
-  - name: "pages"
-    folder: "content/pages"
-    slug: "{{slug}}"
-    create: true
-    label: "Pages"
-    label_singular: "Pages"
+  - name: "Tea"
+    file: "content/tea.yml"
+    label: "Teas"
+    label_singular: "Tea"
     fields:
       - {label: Title, name: title, widget: string}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mma"}
