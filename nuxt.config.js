@@ -51,7 +51,7 @@ module.exports = {
     },
     content: {
       page: '/_post',
-      permalink: ':year/:slug',
+      permalink: ':year/:month/:day/:slug',
       generate: ['get', 'getAll']
     }
   },
