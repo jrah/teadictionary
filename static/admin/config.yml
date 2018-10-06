@@ -6,11 +6,16 @@ media_folder: "static/images/uploads" # Media files will be stored in the repo u
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 
-collections:
-  - name: "Tea"
-    file: "content/tea.yml"
+collections: # A list of collections the CMS should be able to edit
+  - name: "Teas"
     label: "Teas"
-    label_singular: "Tea"
-    fields:
-      - {label: Title, name: title, widget: string}
-      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mma"}
+    delete: false # Prevent users from deleting documents in this collection
+    editor:
+      preview: false
+    files:
+      - name: "Tea"
+        label: "Tea"
+        file: "content/tea.yml"
+        description: "Teas"
+        fields:
+          - {label: "Title", name: "title", widget: "string", required: false}
