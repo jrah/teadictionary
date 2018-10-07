@@ -45,13 +45,9 @@ module.exports = {
   ],
   nuxtent: {
     content: {
-      page: '/_tea',
-      permalink: ':slug',
-      generate: ['get', 'getAll']
-    },
-    content: {
       page: '/_post',
-      permalink: ':year/:month/:day/:slug',
+      isPost: false,
+      permalink: ':year/:slug',
       generate: ['get', 'getAll']
     }
   },

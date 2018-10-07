@@ -2,8 +2,10 @@
   <div>
     <h1> All Posts </h1>
     <ul>
-      <li v-for="tea in teas" :key="tea.id">
-        {{ tea.title }}
+      <li
+        v-for="post in posts"
+        :key="post.id">
+        {{ post.title }}
       </li>
     </ul>
   </div>
@@ -11,10 +13,8 @@
 
 <script>
 export default {
-  async asyncData({ app }) {
-    return {
-      posts: await app.$content('/').getAll()
-    }
-  }
+  asyncData: async ({ app }) => ({
+    post: await app.$content('/posts').getAll()
+  })
 }
 </script>

@@ -8,10 +8,8 @@
 
 <script>
 export default {
-  async asyncData({ app, route }) {
-    return {
-      post: await app.$content('/').get(route.path)
-    }
-  }
+  asyncData: async ({ app, route }) => ({
+    post: await app.$content('/posts').get(route.path)
+  })
 }
 </script>

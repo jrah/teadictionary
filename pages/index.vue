@@ -20,15 +20,6 @@
       </div>
     </div>
   </section>
-  <section>
-    <div>
-      <ul>
-        <li v-for="post in posts" :key="post.id">
-          {{ post.title }}
-        </li>
-      </ul>
-    </div>
-  </section>
 </template>
 
 <script>
@@ -37,11 +28,6 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
-  },
-  async asyncData({ app }) {
-    return {
-      posts: await app.$content('/').getAll()
-    }
   }
 }
 </script>
