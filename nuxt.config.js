@@ -39,18 +39,11 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios',
-    'nuxtent'
+    // axios seems to mess with the get of nuxtent
+    // '@nuxtjs/axios',
+    'nuxtent',
+    'nuxt-netlify-cms'
   ],
-  nuxtent: {
-    content: {
-      page: '/_post',
-      isPost: false,
-      permalink: ':year/:slug',
-      generate: ['get', 'getAll']
-    }
-  },
   netlifyCms: {
     adminPath: 'secure'
   },
