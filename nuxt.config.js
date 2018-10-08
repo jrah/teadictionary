@@ -1,4 +1,5 @@
 const pkg = require('./package')
+import cssnext from 'postcss-cssnext'
 
 module.exports = {
   mode: 'universal',
@@ -28,7 +29,9 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: [],
+  css: [
+    '~/assets/scss/app.scss'
+  ],
 
   /*
   ** Plugins to load before mounting the App
@@ -58,6 +61,11 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    extend (config) {
+      // Add postcss loader for CSS files
+      const cssLoader = config.module.rules.find((loader) => loader.test.toString() === '/\\.css$/')
+      cssLoader.use.push('postcss-loader')
+    },
     /*
     ** You can extend webpack config here
     */
