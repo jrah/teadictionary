@@ -13,19 +13,18 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@nuxtjs/axios": "latest",
+    "@nuxtjs/axios": "^4.5.2",
     "cross-env": "^5.2.0",
-    "nuxt": "^2.0.0",
+    "nuxt": "latest",
     "nuxt-netlify-cms": "^3.1.0",
     "netlify-cms": "^2.1.2",
     "nuxtent": "latest",
-    "webpack": "latest",
-    "extract-text-webpack-plugin": "latest",
-    "friendly-errors-webpack-plugin": "latest"
+    "webpack": "^3.1.0",
+    "extract-text-webpack-plugin": "latest"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
-    "eslint": "^5.0.1",
+    "eslint": "^4.0.0",
     "eslint-config-prettier": "^3.1.0",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-prettier": "2.6.2",
