@@ -19,7 +19,7 @@
     "nuxt-netlify-cms": "^3.1.0",
     "netlify-cms": "^2.1.2",
     "nuxtent": "latest",
-    "webpack": "latest"
+    "extract-text-webpack-plugin": "latest"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
