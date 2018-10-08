@@ -5,6 +5,7 @@
 </template>
 
 <style lang="scss">
+@import './node_modules/tachyons-sass/tachyons';
 @import "~/assets/scss/app.scss";
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
