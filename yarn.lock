@@ -1718,12 +1718,7 @@ caniuse-api@^3.0.0:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-lite@^1.0.0:
-  version "1.0.30000889"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000889.tgz#53e266c83e725ad3bd2e4a3ea76d5031a8aa4c3e"
-  integrity sha512-MFxcQ6x/LEEoaIhO7Zdb7Eg8YyNONN+WBnS5ERJ0li2yRw51+i4xXUNxnLaveTb/4ZoJqsWKEmlomhG2pYzlQA==
-
-caniuse-lite@^1.0.30000884, caniuse-lite@^1.0.30000888, caniuse-lite@^1.0.30000889:
+caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000884, caniuse-lite@^1.0.30000888, caniuse-lite@^1.0.30000889:
   version "1.0.30000890"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000890.tgz#86a18ffcc65d79ec6a437e985761b8bf1c4efeaf"
   integrity sha512-4NI3s4Y6ROm+SgZN5sLUG4k7nVWQnedis3c/RWkynV5G6cHSY7+a8fwFyn2yoBDE3E6VswhTNNwR3PvzGqlTkg==
@@ -9150,9 +9145,9 @@ webpack-dev-middleware@^3.4.0:
     webpack-log "^2.0.0"
 
 webpack-hot-middleware@^2.24.2:
-  version "2.24.2"
-  resolved "https://registry.yarnpkg.com/webpack-hot-middleware/-/webpack-hot-middleware-2.24.2.tgz#0d2deeb813f67693e2997b87c3a9d9be324575dd"
-  integrity sha512-VsBGNMC5JDnab5hbReMjmIYtnvDMT+odLSP49EbLZHwuAoJJDNOi0YLhTe40vvP7u7Be+Ww1mYHjwwelqdnaKA==
+  version "2.24.3"
+  resolved "https://registry.yarnpkg.com/webpack-hot-middleware/-/webpack-hot-middleware-2.24.3.tgz#5bb76259a8fc0d97463ab517640ba91d3382d4a6"
+  integrity sha512-pPlmcdoR2Fn6UhYjAhp1g/IJy1Yc9hD+T6O9mjRcWV2pFbBjIFoJXhP0CoD0xPOhWJuWXuZXGBga9ybbOdzXpg==
   dependencies:
     ansi-html "0.0.7"
     html-entities "^1.2.0"
