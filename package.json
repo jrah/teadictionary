@@ -19,7 +19,7 @@
     "nuxt-netlify-cms": "^3.1.0",
     "netlify-cms": "^2.1.2",
     "nuxtent": "1.4.1",
-    "webpack": "4.2.2"
+    "webpack": "4.20.2"
 
   },
   "devDependencies": {
