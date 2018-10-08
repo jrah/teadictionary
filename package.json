@@ -18,7 +18,8 @@
     "nuxt": "^2.0.0",
     "nuxt-netlify-cms": "^3.1.0",
     "netlify-cms": "^2.1.2",
-    "nuxtent": "latest"
+    "nuxtent": "latest",
+    "webpack": "latest"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
