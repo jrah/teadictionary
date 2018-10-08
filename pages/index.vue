@@ -17,17 +17,25 @@
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
           class="button--grey">GitHub</a>
+        <nuxt-link to="/list">List</nuxt-link>
       </div>
+      <ul>
+        <li
+          v-for="tea in teas"
+          :key="tea">
+          {{ tea.title }}
+        </li>
+      </ul>
     </div>
+
   </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 
 export default {
   components: {
-    Logo
+
   }
 }
 </script>
