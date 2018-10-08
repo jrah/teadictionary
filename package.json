@@ -26,6 +26,7 @@
     "postcss": "^7.0.5",
     "postcss-cssnext": "^3.1.0",
     "postcss-loader": "^3.0.0",
+    "sass-lint": "^1.12.1",
     "sass-loader": "^7.1.0",
     "tachyons-sass": "^4.9.3",
     "vue-style-loader": "^4.1.2",
