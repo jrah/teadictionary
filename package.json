@@ -15,12 +15,12 @@
   "dependencies": {
     "@nuxtjs/axios": "^4.5.2",
     "cross-env": "^5.2.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "netlify-cms": "^2.1.2",
     "nuxt": "latest",
     "nuxt-netlify-cms": "^3.1.0",
-    "netlify-cms": "^2.1.2",
     "nuxtent": "1.4.1",
     "webpack": "4.20.2"
-
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
