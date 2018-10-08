@@ -15,6 +15,6 @@ module.exports = {
   ],
   api: {
     baseURL: 'http://localhost:3000',
-    browserBaseURL: 'https://competent-poitras-41420e.netlify.com'
+    browserBaseURL: 'https://teadictionary.netlify.com'
   }
 }
