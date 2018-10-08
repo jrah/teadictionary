@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
-  repo: jrah/teadictionary
   branch: master # Branch to update (optional; defaults to master)
+
 media_folder: "static/images/uploads" # Media files will be stored in the repo under images/uploads
 public_folder: "images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
@@ -13,4 +13,5 @@ collections: # A list of collections the CMS should be able to edit
     slug: "{{slug}}"
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - {label: "Name", name: "title", widget: "string", tagname: "h2"}
+      - {label: "Name", name: "name", widget: "string", tagname: "h2"}
+      - {label: "Test", name: "test", widget: "string", tagname: "h2"}
