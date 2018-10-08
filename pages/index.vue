@@ -36,6 +36,11 @@
 export default {
   components: {
 
+  },
+  async asyncData({ app }) {
+    return {
+      teas: await app.$content('./teas').getAll()
+    }
   }
 }
 </script>
