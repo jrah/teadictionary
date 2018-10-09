@@ -1,5 +1,5 @@
 ---
 title: Wendy Tea
-copy: sdferdfve
-expanded_copy: dfbvrtfv
+truncated_body: Lorem ipsum
 ---
+Lorem ipsum
