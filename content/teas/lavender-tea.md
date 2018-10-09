@@ -1,6 +1,14 @@
 ---
 templateKey: tea.template
 title: Lavender Tea
-truncated_body: Lorem ipsum
+truncated_copy: >-
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque nostrum soluta
+  ratione, doloribus fuga itaque.
+copy: >-
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque nostrum soluta
+  ratione, doloribus fuga itaque.
+
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque nostrum soluta
+  ratione, doloribus fuga itaque.
 ---
-Lorem ipsum
+
