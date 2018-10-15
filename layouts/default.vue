@@ -1,10 +1,83 @@
 <template>
   <div>
+    <div>Nav</div>
     <nuxt/>
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
+@import "./node_modules/tachyons-sass/scss/variables";
+
+$mqs: (
+  sm: 35.5em,
+  md: 48em,
+  lg: 64em,
+) !default;
+
+@mixin mq($mq) {
+  @if $mq == ns {
+
+    @media screen and (min-width: #{map-get($mqs, sm)}) {
+      @content;
+    }
+
+  } @if $mq == m {
+
+      @media screen and (min-width: #{map-get($mqs, sm)}) and (max-width: #{map-get($mqs, lg)}) {
+        @content;
+      }
+
+    } @if $mq == l {
+
+      @media screen and (min-width: #{map-get($mqs, lg)}) {
+        @content;
+      }
+
+    }
+}
+
+.mwc {
+  margin-left: auto;
+  margin-right: auto;
+  max-width:  100%;
+}
+
+
+@each $size, $width in $mqs {
+
+  .mwc {
+
+    @if $size == ns {
+
+      @media screen and (min-width: #{map-get($mqs, ns)}) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width:  55em;
+      }
+
+    } @if $size == lg {
+
+      @media screen and (min-width: #{map-get($mqs, lg)}) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width:  72em;
+      }
+
+    } @if $size == m {
+
+      @media screen and (min-width: #{map-get($mqs, ns)}) and (max-width: #{map-get($mqs, lg)}) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width:  65em;
+      }
+
+    }
+
+  }
+
+}
+
+
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -17,39 +90,5 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-}
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
 </style>

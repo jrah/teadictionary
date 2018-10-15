@@ -15,8 +15,8 @@ module.exports = {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     script: [
-      { src: 'https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js' },
-      { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
+      // { src: 'https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js' },
+      // { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
@@ -36,7 +36,9 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [],
+  plugins: [
+    { src: '~/plugins/autoresponsive-vue', ssr: true }
+  ],
 
   /*
   ** Nuxt.js modules
@@ -61,6 +63,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    // vendor: ['auto-responsive.js'],
     extend (config) {
       // Add postcss loader for CSS files
       const cssLoader = config.module.rules.find((loader) => loader.test.toString() === '/\\.css$/')
