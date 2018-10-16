@@ -1,18 +1,17 @@
 <template>
     <div class="modal-backdrop">
       <div class="modal">
-        <slot name="header">
+        <slot name="title">
           <h2>Default Heading</h2>
-          <button
-            type="button"
-            class="bg-green white di outline-0 bn"
-             @click="$emit('close')"
-             @error="modalError()"
-            >
-             Close
-          </button>
         </slot>
-
+        <button
+          type="button"
+          class="bg-green white di outline-0 bn"
+           @click="$emit('close')"
+           @error="modalError()"
+          >
+           Close
+        </button>
         <slot name="body">
           I'm the default body!
         </slot>
@@ -61,9 +60,9 @@
     width: 80%;
     height: 80%;
     padding: 3rem;
-    overflow-x: auto;
-    display: flex;
-    flex-direction: column;
+    // overflow-x: auto;
+    // display: flex;
+    // flex-direction: column;
   }
 
   .modal-header,

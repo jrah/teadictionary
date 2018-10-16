@@ -10,6 +10,7 @@
           <modal
             v-show="isModalVisible"
             @close="closeModal">
+            <h2 slot="title">{{tea.title}}</h2>
           </modal>
           <h2  class="f3">{{tea.title}}</h2>
           <!-- <img v-if="tea.image" class="work-thumb" sizes="100vw" :src="tea.image" @error="imageLoadError($event)"> -->
