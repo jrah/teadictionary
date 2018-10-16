@@ -5,37 +5,9 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "./node_modules/tachyons-sass/scss/variables";
-
-$mqs: (
-  sm: 35.5em,
-  md: 48em,
-  lg: 64em,
-) !default;
-
-@mixin mq($mq) {
-  @if $mq == ns {
-
-    @media screen and (min-width: #{map-get($mqs, sm)}) {
-      @content;
-    }
-
-  } @if $mq == m {
-
-      @media screen and (min-width: #{map-get($mqs, sm)}) and (max-width: #{map-get($mqs, lg)}) {
-        @content;
-      }
-
-    } @if $mq == l {
-
-      @media screen and (min-width: #{map-get($mqs, lg)}) {
-        @content;
-      }
-
-    }
-}
-
+@import "assets/scss/mixins";
 .mwc {
   margin-left: auto;
   margin-right: auto;

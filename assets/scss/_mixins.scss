@@ -1,0 +1,27 @@
+$mqs: (
+  sm: 35.5em,
+  md: 48em,
+  lg: 64em,
+) !default;
+
+@mixin mq($mq) {
+  @if $mq == ns {
+
+    @media screen and (min-width: #{map-get($mqs, sm)}) {
+      @content;
+    }
+
+  } @if $mq == m {
+
+      @media screen and (min-width: #{map-get($mqs, sm)}) and (max-width: #{map-get($mqs, lg)}) {
+        @content;
+      }
+
+    } @if $mq == l {
+
+      @media screen and (min-width: #{map-get($mqs, lg)}) {
+        @content;
+      }
+
+    }
+}
