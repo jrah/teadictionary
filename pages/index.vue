@@ -5,7 +5,7 @@
   <div class="mwc center">
     <h1>Tea Dictionary</h1>
       <div class="grid-layout">
-        <span v-for="tea in teas" :key="tea.id" class="grid-item cover bg-center pointer white" v-bind:style="[ tea.image ? { 'background-image': 'url(' + tea.image + ')' } : { 'background-color': '#25324e' } ]">
+        <span v-for="(tea, index) in teas" :key="index" :name=" '' + index " class="grid-item cover bg-center pointer white" v-bind:style="[ tea.image ? { 'background-image': 'url(' + tea.image + ')' } : { 'background-color': '#25324e' } ]">
           <button type="button" @click="showModal">Open Modal</button>
           <modal
             v-show="isModalVisible"
