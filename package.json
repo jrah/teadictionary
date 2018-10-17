@@ -2,6 +2,7 @@
   "name": "vuejsdictionary",
   "version": "1.0.0",
   "description": "Vue Tea Dictionary",
+  "title": "DiversiTea Tea Dictionary",
   "author": "jrah",
   "private": true,
   "scripts": {
