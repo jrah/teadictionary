@@ -1,12 +1,12 @@
 <template>
-    <div class="modal-backdrop">
+    <div class="modal-backdrop" @click="$emit('close')">
       <div class="modal">
         <slot name="title">
           <h2>Default Heading</h2>
         </slot>
         <button
           type="button"
-          class="bg-green white di outline-0 bn"
+          class="bg-green white di outline-0 bn pointer"
            @click="$emit('close')"
            @error="modalError()"
           >
