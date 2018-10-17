@@ -5,11 +5,13 @@
   <div class="mwc center">
     <h1>Tea Dictionary</h1>
       <div class="grid-layout">
-        <div v-for="(tea, index) in teas" :key="index" :name=" '' + index " @click="showModal(tea)" class="grid-item cover bg-center pointer white" v-bind:style="[ tea.image ? { 'background-image': 'url(' + tea.image + ')' } : { 'background-color': '#25324e' } ]">
-          <!-- <button type="button" @click="showModal(tea)">Open Modal</button> -->
-          <h2  class="f3">{{tea.title}}</h2>
-          <!-- <img v-if="tea.image" class="work-thumb" sizes="100vw" :src="tea.image" @error="imageLoadError($event)"> -->
-        </div>
+        <auto-responsive @options="autoResponsiveOptions">
+          <div v-for="(tea, index) in teas" :key="index" :name=" '' + index " @click="showModal(tea)" class="grid-item cover bg-center pointer white" v-bind:style="[ tea.image ? { 'background-image': 'url(' + tea.image + ')' } : { 'background-color': '#25324e' } ]">
+            <!-- <button type="button" @click="showModal(tea)">Open Modal</button> -->
+            <h2  class="f3">{{tea.title}}</h2>
+            <!-- <img v-if="tea.image" class="work-thumb" sizes="100vw" :src="tea.image" @error="imageLoadError($event)"> -->
+          </div>
+        </auto-responsive>
         <modal
           v-show="isModalVisible"
           @close="closeModal">
@@ -25,9 +27,25 @@
 
 <script>
 import modal from '~/components/Modal.vue';
+// import AutoResponsive
 export default {
   components: {
     modal
+   },
+   computed: {
+     autoResponsiveOptions() {
+       let containerWidth = 600
+       if (window && window.document && window.document.body) {
+         containerWidth = window.document.body.clientWidth
+       }
+       return {
+          containerWidth,
+          itemMargin: 10,
+        itemClassName: 'item',
+        gridWidth: 100,
+        transitionDuration: '.5'
+       }
+     }
    },
   async asyncData({ app }) {
     return {
