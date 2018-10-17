@@ -5,16 +5,17 @@
   <div class="mwc center">
     <h1>Tea Dictionary</h1>
       <div class="grid-layout">
-        <span v-for="(tea, index) in teas" :key="index" :name=" '' + index " class="grid-item cover bg-center pointer white" v-bind:style="[ tea.image ? { 'background-image': 'url(' + tea.image + ')' } : { 'background-color': '#25324e' } ]">
-          <button type="button" @click="showModal">Open Modal</button>
-          <modal
-            v-show="isModalVisible"
-            @close="closeModal">
-            <h2 slot="title">{{tea.title}}</h2>
-          </modal>
+        <div v-for="(tea, index) in teas" :key="index" :name=" '' + index " @click="showModal(tea)" class="grid-item cover bg-center pointer white" v-bind:style="[ tea.image ? { 'background-image': 'url(' + tea.image + ')' } : { 'background-color': '#25324e' } ]">
+          <!-- <button type="button" @click="showModal(tea)">Open Modal</button> -->
           <h2  class="f3">{{tea.title}}</h2>
           <!-- <img v-if="tea.image" class="work-thumb" sizes="100vw" :src="tea.image" @error="imageLoadError($event)"> -->
-        </span>
+        </div>
+        <modal
+          v-show="isModalVisible"
+          @close="closeModal">
+          <h2 slot="title">{{selectedTea.title}}</h2>
+          <p slot="body">{{selectedTea.copy}}</p>
+        </modal>
       </div>
   </div>
 </div>
@@ -30,15 +31,17 @@ export default {
    },
   async asyncData({ app }) {
     return {
-      teas: await app.$content('./teas').getAll()
+      teas: await app.$content('./teas').getAll(),
+      selectedTea: {}
     }
   },
   methods: {
     imageLoadError () {
       console.log(this + 'Image failed to load');
     },
-    showModal () {
+    showModal (tea) {
       this.isModalVisible = true;
+      this.selectedTea = tea;
     },
     closeModal () {
       this.isModalVisible = false;
