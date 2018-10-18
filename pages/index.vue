@@ -6,7 +6,7 @@
     <h1>Tea Dictionary</h1>
       <div class="grid-layout">
         <div v-for="(tea, index) in teas" :key="index" :name=" '' + index " @click="showModal(tea)" class="grid-item cover bg-center pointer white" v-bind:style="[ tea.image ? { 'background-image': 'url(' + tea.image + ')' } : { 'background-color': '#25324e' } ]">
-          <!-- <button type="button" @click="showModal(tea)">Open Modal</button> -->
+
           <h2  class="f3">{{tea.title}}</h2>
           <!-- <img v-if="tea.image" class="work-thumb" sizes="100vw" :src="tea.image" @error="imageLoadError($event)"> -->
         </div>
@@ -28,7 +28,7 @@ import modal from '~/components/Modal.vue';
 export default {
   components: {
     modal
-   },
+  },
   async asyncData({ app }) {
     return {
       teas: await app.$content('./teas').getAll(),

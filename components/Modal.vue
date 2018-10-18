@@ -1,20 +1,19 @@
 <template>
   <transition name="modal-fade">
     <div class="modal-backdrop">
-      <div class="modal">
+      <div class="modal relative bg-near-black near-white">
 
-        <button @click="$emit('close')">
-          Close
+        <button @click="$emit('close')" class="bg-transparent near-white bn pointer absolute top-0 right-0 ma3 outline-0">
+          <no-ssr>
+            <v-icon name="window-close" scale="2"/>
+          </no-ssr>
         </button>
+
         <slot name="title">
           <h2>Default Heading</h2>
         </slot>
         <slot name="body">
           I'm the default body!
-        </slot>
-
-        <slot name="footer">
-
         </slot>
       </div>
     </div>
@@ -53,54 +52,11 @@
   }
 
   .modal {
-    background: $white;
-    color: $black;
     width: 80%;
     height: 80%;
     padding: 3rem;
-    // overflow-x: auto;
-    // display: flex;
-    // flex-direction: column;
   }
 
-  .modal-header,
-  .modal-footer {
-    padding: 15px;
-    display: flex;
-  }
-
-  .modal-header {
-    border-bottom: 1px solid #eeeeee;
-    color: #4AAE9B;
-    justify-content: space-between;
-  }
-
-  .modal-footer {
-    border-top: 1px solid #eeeeee;
-    justify-content: flex-end;
-  }
-
-  .modal-body {
-    position: relative;
-    padding: 20px 10px;
-  }
-
-  .btn-close {
-    border: none;
-    font-size: 20px;
-    padding: 20px;
-    cursor: pointer;
-    font-weight: bold;
-    color: #4AAE9B;
-    background: transparent;
-  }
-
-  .btn-green {
-    color: white;
-    background: #4AAE9B;
-    border: 1px solid #4AAE9B;
-    border-radius: 2px;
-  }
 
   .modal-fade-enter,
    .modal-fade-leave-active {

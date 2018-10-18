@@ -1,5 +1,6 @@
 const pkg = require('./package')
 import cssnext from 'postcss-cssnext'
+const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
   mode: 'universal',
@@ -37,7 +38,8 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~/plugins/autoresponsive-vue', ssr: true }
+    { src: '~/plugins/autoresponsive-vue', ssr: true },
+    { src: '~/plugins/font-awesome', ssr: true }
   ],
 
   /*
@@ -63,6 +65,18 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    // vendor: ['vueAwesome'],
+    extend (config, { isServer }) {
+      if (isServer) {
+        config.externals = [
+          nodeExternals({
+            // default value for `whitelist` is
+            // [/es6-promise|\.(?!(?:js|json)$).{1,5}$/i]
+            whitelist: [/es6-promise|\.(?!(?:js|json)$).{1,5}$/i, /^vue-awesome/]
+          })
+        ]
+      }
+    },
     // vendor: ['auto-responsive.js'],
     extend (config) {
       // Add postcss loader for CSS files
