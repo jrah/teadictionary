@@ -7,7 +7,7 @@
 
 <style lang="scss">
 
-@import "./node_modules/tachyons-sass/scss/variables";
+@import "assets/scss/variables";
 @import "assets/scss/mixins";
 
 body {

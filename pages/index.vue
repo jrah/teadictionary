@@ -73,7 +73,7 @@ export default {
 
 <style scoped lang="scss">
 @import "assets/scss/mixins";
-@import "./node_modules/tachyons-sass/scss/variables";
+@import "assets/scss/variables";
 .grid-layout {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
