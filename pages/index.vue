@@ -13,8 +13,8 @@
         <modal
           v-show="isModalVisible"
           @close="closeModal">
-          <h2 slot="title">{{selectedTea.title}}</h2>
-          <p slot="body">{{selectedTea.copy}}</p>
+          <h2 slot="title" class="f1 fw8 mt0 lh-title">{{selectedTea.title}}</h2>
+          <p slot="body" class="ma0 lh-copy">{{selectedTea.copy}}</p>
         </modal>
       </div>
   </div>

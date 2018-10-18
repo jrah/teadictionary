@@ -1,7 +1,7 @@
 <template>
   <transition name="modal-fade">
     <div class="modal-backdrop">
-      <div class="modal relative bg-near-black near-white">
+      <div class="modal relative bg-near-black near-white br2">
 
         <button @click="$emit('close')" class="bg-transparent near-white bn pointer absolute top-0 right-0 ma3 outline-0">
           <no-ssr>
@@ -37,7 +37,7 @@
   };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "./node_modules/tachyons-sass/scss/variables";
   .modal-backdrop {
     position: fixed;
