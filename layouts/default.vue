@@ -6,8 +6,13 @@
 </template>
 
 <style lang="scss">
+
 @import "./node_modules/tachyons-sass/scss/variables";
 @import "assets/scss/mixins";
+
+body {
+  font-family: 'Raleway', $sans-serif;
+}
 .mwc {
   margin-left: auto;
   margin-right: auto;

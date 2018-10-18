@@ -19,7 +19,10 @@ module.exports = {
       // { src: 'https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js' },
       // { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway' }
+    ]
   },
 
   /*
