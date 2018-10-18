@@ -15,6 +15,9 @@
         <slot name="body">
           I'm the default body!
         </slot>
+        <slot name="image">
+          No image
+        </slot>
       </div>
     </div>
   </transition>
