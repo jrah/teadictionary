@@ -1,17 +1,14 @@
 <template>
-    <div class="modal-backdrop" @click="$emit('close')">
+  <transition name="modal-fade">
+    <div class="modal-backdrop">
       <div class="modal">
+
+        <button @click="$emit('close')">
+          Close
+        </button>
         <slot name="title">
           <h2>Default Heading</h2>
         </slot>
-        <button
-          type="button"
-          class="bg-green white di outline-0 bn pointer"
-           @click="$emit('close')"
-           @error="modalError()"
-          >
-           Close
-        </button>
         <slot name="body">
           I'm the default body!
         </slot>
@@ -21,6 +18,7 @@
         </slot>
       </div>
     </div>
+  </transition>
 </template>
 
 
@@ -103,4 +101,15 @@
     border: 1px solid #4AAE9B;
     border-radius: 2px;
   }
+
+  .modal-fade-enter,
+   .modal-fade-leave-active {
+     opacity: 0;
+   }
+
+   .modal-fade-enter-active,
+   .modal-fade-leave-active {
+     transition: opacity .5s ease
+   }
+
 </style>
