@@ -6,12 +6,12 @@
     <img src="~assets/images/logo.svg" alt="Logo">
   </div>
   <div class="mwc center">
-    <div class="mw7 center tc mwc ph5-ns ph4 pb5-ns pt4">
+    <div class="mw7 center tc mwc ph5-ns ph4 mb6-ns pt4">
       <h1 class="mt0 f2 mb3 lh-title">Tea Dictionary</h1>
       <p class="lh-copy ma0">Artisan loose leaf tea curators DiversiTea in collaboration with the famous South Korean speciality kitchen KOPAN have worked to curate four different types of amazing teas that compliment and reflect the characteristics of Korean cuisine.</p>
     </div>
     <div class="relative">
-      <div class="grid-layout bg-white pv3 mh3 absolute left-0 right-0" style="top: -3rem;">
+      <div class="grid-layout bg-white pa3 br2 absolute left-0 right-0" style="top: -3rem;">
         <div v-for="(tea, index) in teas" :key="index" :name=" '' + index " @click="showModal(tea)" class="grid-item cover bg-center pointer white grow" v-bind:style="[ tea.image ? { 'background-image': 'url(' + tea.image + ')' } : { 'background-color': '#25324e' } ]">
 
           <h2  class="f3">{{tea.title}}</h2>
@@ -21,7 +21,7 @@
           v-show="isModalVisible"
           @close="closeModal">
             <h2 slot="title" class="f1 fw8 mt0 lh-title">{{selectedTea.title}}</h2>
-            <p slot="body" class="ma0 lh-copy">{{selectedTea.copy}}</p>
+            {{selectedTea.copy}}
           <!-- <img slot="image" v-if="selectedTea.image" :src="selectedTea.image" alt=""> -->
         </modal>
       </div>
@@ -80,7 +80,7 @@ export default {
     grid-gap: .75em;
     grid-auto-rows: minmax(10em, auto);
     grid-auto-flow: dense;
-    padding: 10px;
+    // padding: 10px;
     transition: all 1s;
 }
 

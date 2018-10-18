@@ -16,5 +16,4 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "tea.template"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Image", name: "image", widget: "image", required: false}
-      - {label: "Truncated", name: "truncated_copy", widget: "text"}
-      - {label: "Copy", name: "copy", widget: "text"}
+      - {label: "Copy", name: "copy", widget: "markdown"}
