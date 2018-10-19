@@ -15,6 +15,9 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "tea.template"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
-      - {label: "Truncated", name: "truncated_copy", widget: "text"}
-      - {label: "Copy", name: "copy", widget: "text"}
+      - {label: "Ingredients", name: "ingredients", widget: "text"}
+      - {label: "keywords", name: "keywords", widget: "select", options: ["flowery", "nutty", "bitter"], required: false}
+      - {label: "Tasting notes", name: "notes", widget: "text"}
+      - {label: "Brewing guide", name: "guide", widget: "text"}

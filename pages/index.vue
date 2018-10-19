@@ -21,8 +21,12 @@
           v-show="isModalVisible"
           @close="closeModal">
             <h2 slot="title" class="f1 fw8 mt0 lh-title">{{selectedTea.title}}</h2>
-            <p slot="body" class="ma0 lh-copy">{{selectedTea.copy}}</p>
-          <!-- <img slot="image" v-if="selectedTea.image" :src="selectedTea.image" alt=""> -->
+            <p slot="keywords" class="ma0 lh-copy">{{selectedTea.keywords}}</p>
+            <p slot="description" class="ma0 lh-copy">{{selectedTea.description}}</p>
+            <p slot="ingredients" class="ma0 lh-copy">{{selectedTea.ingredients}}</p>
+            <p slot="notes" class="ma0 lh-copy">{{selectedTea.notes}}</p>
+            <p slot="guide" class="ma0 lh-copy">{{selectedTea.guide}}</p>
+          <img slot="image" v-if="selectedTea.image" :src="selectedTea.image" alt="">
         </modal>
       </div>
     </div>
