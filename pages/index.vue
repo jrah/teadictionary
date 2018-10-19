@@ -26,7 +26,7 @@
             <p slot="ingredients" class="ma0 lh-copy">{{selectedTea.ingredients}}</p>
             <p slot="notes" class="ma0 lh-copy">{{selectedTea.notes}}</p>
             <p slot="guide" class="ma0 lh-copy">{{selectedTea.guide}}</p>
-          <img slot="image" v-if="selectedTea.image" :src="selectedTea.image" alt="">
+          <!-- <img slot="image" v-if="selectedTea.image" :src="selectedTea.image" alt=""> -->
         </modal>
       </div>
     </div>

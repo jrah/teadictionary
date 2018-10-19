@@ -19,9 +19,7 @@
         <slot name="ingredients"></slot>
         <slot name="notes"></slot>
         <slot name="guide"></slot>
-        <slot name="image">
-          No image
-        </slot>
+        <slot name="image"></slot>
       </div>
     </div>
   </transition>
