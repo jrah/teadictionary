@@ -18,6 +18,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Ingredients", name: "ingredients", widget: "text"}
-      - {label: "keywords", name: "keywords", widget: "select", options: ["flowery", "nutty", "bitter"], required: false}
+      - {label: "keywords", name: "keywords", widget: "string", required: false}
       - {label: "Tasting notes", name: "notes", widget: "text"}
       - {label: "Brewing guide", name: "guide", widget: "text"}
