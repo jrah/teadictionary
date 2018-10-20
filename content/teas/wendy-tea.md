@@ -10,7 +10,7 @@ image: /images/uploads/wendy-tea.jpg
 ingredients: >-
   Rooibos Earl Grey, Lavender Flowers, Rose Petals, Marigold Petals and
   Cornflower Petals
-keywords: flowery
+keywords: 'flowery, fragrance'
 notes: >-
   Classic Earl Grey flavour with delicately fragrant petals of lavender, rose,
   marigold, and cornflower.
