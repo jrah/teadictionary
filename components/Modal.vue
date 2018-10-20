@@ -12,10 +12,10 @@
         <slot name="title">
           <h2>Default Heading</h2>
         </slot>
+        <slot name="keywords"></slot>
         <slot name="description">
           I'm the default body!
         </slot>
-        <slot name="keywords"></slot>
         <slot name="ingredients"></slot>
         <slot name="notes"></slot>
         <slot name="guide"></slot>
