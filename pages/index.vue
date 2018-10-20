@@ -21,7 +21,18 @@
           v-show="isModalVisible"
           @close="closeModal">
             <h2 slot="title" class="f1 fw8 mt0 lh-title">{{selectedTea.title}}</h2>
-            <p slot="keywords" class="ma0 lh-copy">{{selectedTea.keywords}}</p>
+
+            <div slot="keywords" class="ma0 lh-copy">
+              <ul>
+                {{selectedTea.keywords | split(', ') }}
+                {{selectedTea.keywords | split(', ') | keys }}
+                {{selectedTea.keywords | split(', ') | values }}
+                <li v-for="(keyword, index) in {{selectedTea.keywords | split(', ')}}" v-bind:key="keyword-${index}">
+                  {{keyword}}
+                </li>
+              </ul>
+
+            </div>
             <p slot="description" class="ma0 lh-copy">{{selectedTea.description}}</p>
             <p slot="ingredients" class="ma0 lh-copy">{{selectedTea.ingredients}}</p>
             <p slot="notes" class="ma0 lh-copy">{{selectedTea.notes}}</p>
@@ -44,7 +55,7 @@ export default {
   },
   data () {
     return {
-      title: 'Tea Dictionary'
+      title: 'Tea Dictionary',
     }
   },
   async asyncData({ app }) {
