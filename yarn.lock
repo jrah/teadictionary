@@ -6563,7 +6563,7 @@ nuxt-netlify-cms@^3.1.0:
     needlepoint "^1.0.5"
     style-loader "^0.21.0"
 
-nuxt@latest:
+nuxt@2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-2.1.0.tgz#0875c4c1ce5dbd729d973a5aa0de0ee8aad35a8b"
   integrity sha512-1HVhGohpuELXI4x9/6DdDey86XJ7vThJDd7iTmSd4RJg6V+k5JodlXqvmGRtoYNhBIGvK6kDL/qrQWdfwwXJBg==
@@ -10306,6 +10306,11 @@ undefsafe@^2.0.2:
   dependencies:
     debug "^2.2.0"
 
+underscore@^1.8.3:
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.9.1.tgz#06dce34a0e68a7babc29b365b8e74b8925203961"
+  integrity sha512-5/4etnCkd9c8gwgowi5/om/mYO5ajCaOgdzj/oW+0eQV9WxKBDZw5+ycmKmeaTXjInS/W0BzpGLo2xR2aBwZdg==
+
 unherit@^1.0.4:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/unherit/-/unherit-1.1.1.tgz#132748da3e88eab767e08fabfbb89c5e9d28628c"
@@ -10696,6 +10701,13 @@ vue-eslint-parser@^2.0.3:
     espree "^3.5.2"
     esquery "^1.0.0"
     lodash "^4.17.4"
+
+vue-filter@^0.2.5:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/vue-filter/-/vue-filter-0.2.5.tgz#ddc77582c861aa29218d8effddf8eb7f92d5104b"
+  integrity sha512-E/0wamnxIf5YVUrdA6T1VUriLrxrSC7oXdHWJjWqgAul2IjQxCZ82QLH+RfAh5fAwy6X198sEswxi9K6byHg5g==
+  dependencies:
+    underscore "^1.8.3"
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.1"
