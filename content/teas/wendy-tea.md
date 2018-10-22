@@ -15,5 +15,8 @@ notes: >-
   Classic Earl Grey flavour with delicately fragrant petals of lavender, rose,
   marigold, and cornflower.
 guide: Add one teaspoon to a cup of 100° C water and steep for 4 minutes.
+carousel_images:
+  - image: /images/uploads/nathan-dumlao-527816-unsplash.jpg
+  - image: /images/uploads/wendy-tea.jpg
 ---
 
