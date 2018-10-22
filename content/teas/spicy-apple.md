@@ -1,17 +1,21 @@
 ---
 templateKey: tea.template
-title: Spicy Apple
+title: Spicy Apple (example!)
+description: >
+  Various flower petals lend a gorgeous, magical fragrance blend to this
+  soothing, caffeine-free Earl Grey tea. Can be enjoyed at any time of day but
+  is absolutely perfect at bedtime and will leave you relaxed and uplifted.
+  Increase your mindfulness with this lovely tea.
 image: /images/uploads/nathan-dumlao-527816-unsplash.jpg
-copy: |-
-  This is spicy apple and it tastes delicious. 
+ingredients: >+
+  Rooibos Earl Grey, Lavender Flowers, Rose Petals, Marigold Petals and
+  Cornflower Petals
 
-  **This is bold.**
+keywords: 'flowery, fragrance'
+notes: >+
+  Classic Earl Grey flavour with delicately fragrant petals of lavender, rose,
+  marigold, and cornflower.
 
-  _This is italics._
-
-  > This is a quote. 
-
-  1. This is a list
-  2. Second on the list
+guide: Add one teaspoon to a cup of 100° C water and steep for 4 minutes.
 ---
 
