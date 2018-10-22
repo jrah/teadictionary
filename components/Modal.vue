@@ -1,27 +1,33 @@
 <template>
   <transition name="modal-fade">
     <div class="modal-backdrop">
-      <div class="modal relative bg-near-black near-white br2">
+      <div class="modal relative bg-white near-black br2">
 
-        <button @click="$emit('close')" class="bg-transparent near-white bn pointer absolute top-0 right-0 ma3 outline-0">
+        <button @click="$emit('close')" class="bg-transparent near-black bn pointer absolute top-0 right-0 ma3 outline-0">
           <no-ssr>
             <v-icon name="window-close" scale="2"/>
           </no-ssr>
         </button>
-
         <slot name="title">
           <h2>Default Heading</h2>
         </slot>
-        <slot name="keywords"></slot>
-        <slot name="description">
-          I'm the default body!
-        </slot>
-        <slot name="ingredients"></slot>
-        <slot name="notes"></slot>
-        <slot name="guide"></slot>
-        <slot name="image"></slot>
+        <div class="flex justify-between">
+          <div class="w-30">
+            <slot name="image"></slot>
+          </div>
+          <div class="w-60">
+            <slot name="description"></slot>
+            <slot name="notes"></slot>
+            <slot name="guide"></slot>
+            <slot name="ingredients"></slot>
+            <slot name="keywords"></slot>
+          </div>
+        </div>
+
+</div>
+
+
       </div>
-    </div>
   </transition>
 </template>
 
@@ -44,6 +50,7 @@
 
 <style lang="scss" scoped>
 @import "./node_modules/tachyons-sass/scss/variables";
+@import "assets/scss/mixins";
   .modal-backdrop {
     position: fixed;
     top: 0;
@@ -57,9 +64,10 @@
   }
 
   .modal {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     padding: 3rem;
+    overflow-y: auto;
   }
 
 
