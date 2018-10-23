@@ -23,7 +23,7 @@ module.exports = {
       {
         src: "https://cdn.snipcart.com/scripts/2.0/snipcart.js",
         id: "snipcart",
-        "data-autopop": "false",
+        "data-autopop": "true",
         // Change me. Read more at http://snipcart.com
         "data-api-key": "NjAyY2FlZTEtOGIxZC00NTYxLWE4NmMtMTQwMzA1MDU5MmYzNjM2NzM3NDYxMDUzMjc2NTY4"
       },
