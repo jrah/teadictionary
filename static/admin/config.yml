@@ -24,6 +24,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Brewing guide", name: "guide", widget: "text"}
       - label: "Carousel Images"
         name: "carousel_images"
+        required: false
         label_singular: "Carousel image"
         widget: "list"
         fields:
