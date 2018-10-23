@@ -25,7 +25,7 @@ module.exports = {
         id: "snipcart",
         "data-autopop": "false",
         // Change me. Read more at http://snipcart.com
-        "data-api-key": "NjAyY2FlZTEtOGIxZC00NTYxLWE4NmMtMTQwMzA1MDU5MmYzNjM2NzM3NDYxMDUzMjc2NTY"
+        "data-api-key": "NjAyY2FlZTEtOGIxZC00NTYxLWE4NmMtMTQwMzA1MDU5MmYzNjM2NzM3NDYxMDUzMjc2NTY4"
       },
     ],
     link: [
