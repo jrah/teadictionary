@@ -15,6 +15,7 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "tea.template"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Price", name: "price", widget: "number"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Ingredients", name: "ingredients", widget: "text"}
