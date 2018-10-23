@@ -89,8 +89,9 @@ export default {
       return (this.selectedTea.keywords || "").split("\, ");
     },
     uglifyTitle: function () {
+      return console.log('Uglify Title')
       // return (this.selectedTea.title.replace(/\s+/g, '-').toLowerCase());
-      return console.log(this.selectedTea.title.replace(/\s+/g, '-').toLowerCase());
+      // return console.log(this.selectedTea.title.replace(/\s+/g, '-').toLowerCase());
     }
   },
   methods: {
