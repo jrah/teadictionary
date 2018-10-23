@@ -45,7 +45,17 @@
                     <li v-for="(keyword, index) in keywordSplit" v-bind:key="`keyword-${index}`" class="dib pa2 bg-blue br1 mr2 near-white">{{keyword}}</li>
                   </ul>
                 </div>
-                <button class="ttu tc f7 fw8 no-underline pv3 ph3 dib pointer bn bg-blue near-white bg-animate  hover-bg-blue br2">Add to Cart</button>
+                <div slot="button" class="flex items-center justify-center">
+                  <button
+                  class="snipcart-add-item ttu tc f7 fw8 no-underline pv3 ph3 dib pointer bn bg-blue near-white bg-animate  hover-bg-blue br2"
+                  v-bind:data-item-id="'td-' + uglifyTitle"
+                  v-bind:data-item-name="'TD ' + selectedTea.title"
+                  v-bind:data-item-price="selectedTea.price"
+                  data-item-url="/"
+                  v-bind:data-item-description="selectedTea.description">
+                    Add to cart
+                  </button>
+                </div>
         </modal>
       </div>
     </div>
@@ -70,12 +80,17 @@ export default {
     return {
       teas: await app.$content('./teas').getAll(),
       selectedTea: {
+
       }
     }
   },
   computed: {
     keywordSplit: function() {
       return (this.selectedTea.keywords || "").split("\, ");
+    },
+    uglifyTitle: function () {
+      // return (this.selectedTea.title.replace(/\s+/g, '-').toLowerCase());
+      return console.log(this.selectedTea.title.replace(/\s+/g, '-').toLowerCase());
     }
   },
   methods: {
@@ -85,15 +100,12 @@ export default {
     showModal (tea) {
       this.isModalVisible = true;
       this.selectedTea = tea;
-      // console.log(this);
-      // console.log(this.selecteTea);
-      console.log(this.selectedTea.keywords);
-      // console.log(tea);
+      console.log(this.selectedTea.title.replace(/\s+/g, '-').toLowerCase());
 
     },
     closeModal () {
       this.isModalVisible = false;
-    }
+    },
   },
   data () {
     return {

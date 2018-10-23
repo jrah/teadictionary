@@ -11,11 +11,12 @@
         <slot name="title">
           <h2>Default Heading</h2>
         </slot>
-        <div class="flex justify-between">
-          <div class="w-30">
+        <div class="flex-ns justify-between">
+          <div class="w-30-ns">
             <slot name="image"></slot>
+            <slot name="button"></slot>
           </div>
-          <div class="w-60">
+          <div class="w-60-ns">
             <slot name="description"></slot>
             <slot name="notes"></slot>
             <slot name="guide"></slot>

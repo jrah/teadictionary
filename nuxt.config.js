@@ -4,7 +4,6 @@ const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
   mode: 'universal',
-
   /*
   ** Headers of the page
   */
@@ -18,10 +17,21 @@ module.exports = {
     script: [
       // { src: 'https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js' },
       // { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
+      {
+        src: "https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js",
+      },
+      {
+        src: "https://cdn.snipcart.com/scripts/2.0/snipcart.js",
+        id: "snipcart",
+        "data-autopop": "false",
+        // Change me. Read more at http://snipcart.com
+        "data-api-key": "NjAyY2FlZTEtOGIxZC00NTYxLWE4NmMtMTQwMzA1MDU5MmYzNjM2NzM3NDYxMDUzMjc2NTY"
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway' },
+      { rel: 'stylesheet', href: 'https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css'}
     ]
   },
 
