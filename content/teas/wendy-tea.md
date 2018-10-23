@@ -1,6 +1,7 @@
 ---
 templateKey: tea.template
 title: Wendy Tea
+price: '5'
 description: >-
   Various flower petals lend a gorgeous, magical fragrance blend to this
   soothing, caffeine-free Earl Grey tea. Can be enjoyed at any time of day but
