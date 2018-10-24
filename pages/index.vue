@@ -1,94 +1,101 @@
 <template>
-<div>
+<article>
 
-<div class="absolute top-0 left-0 right-0 z-5 w-100">
-  <div class="mwc ph5-ns ph4 pv3 flex items-center justify-between">
+<header>
+
+  <div class="absolute top-0 left-0 right-0 z-5 w-100">
+    <div class="mwc ph5-ns ph4 pv3 flex items-center justify-between">
       <img src="~assets/images/logo.svg" class="w4 white" alt="Logo">
       <nav>
         <a href="/" class="white no-underline fw8">Link</a>
         <a href="/" class="white no-underline fw8">Link</a>
         <a href="/" class="white no-underline fw8">Link</a>
       </nav>
+    </div>
   </div>
-</div>
+
   <div class="cover bg-center vh-75 relative flex items-center bg-navy" style="background-image:url('https://source.unsplash.com/XmTZmASn3Dc')">
     <div class="mwc ph5-ns ph4 pv3 z-2 relative">
-      <div  class="white w-33-l">
-          <h1 class="mt0 f1 mb2 fw8 lh-title">Tea Dictionary</h1>
-          <p class="lh-copy ma0 z-1 fw8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque illum, aut illo omnis ipsum minus laborum, voluptates odio eum quas animi deserunt, assumenda ducimus nam!</p>
+      <div class="white w-33-l">
+        <h1 class="mt0 f1 mb2 fw8 lh-title">Tea Dictionary</h1>
+        <p class="lh-copy ma0 z-1 fw8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque illum, aut illo omnis ipsum minus laborum, voluptates odio eum quas animi deserunt, assumenda ducimus nam!</p>
       </div>
     </div>
     <div class="overlay absolute db top-0 left-0 bottom-0 right-0 z-1" style="background-image: linear-gradient(205deg,rgba(37, 37, 37, 0.23), rgba(10, 10, 10, 0.72));"></div>
   </div>
-  <section>
 
-  </section>
-<div>
+</header>
 
-  <div class="relative ph5-ns ph4 cover" :style="{ backgroundImage: `url(${gridBackground})` }">
-    <div class="mwc center">
-      <section class="grid-layout pv6">
-        <div v-for="(tea, index) in teas" :key="index" :name=" '' + index " @click="showModal(tea)" class="grid-item pointer relative bg-white">
-          <span class="absolute top-0 left-0" :class="'bg-'+tea.color" style="width: 10px; height:10px; z-index: 2;"></span>
-          <div class="pa3">
-            <h2 class="f2 mt0 mb2">{{tea.title}}</h2>
-            <div class="absolute bottom-2 flex items-center" :class="tea.color">
-              <p class="ma0 fw8 mr2">Read more</p>
-              <no-ssr>
-                <v-icon name="arrow-right"/>
-              </no-ssr>
+  <main>
+
+    <div class="relative ph5-ns ph4 cover" :style="{ backgroundImage: `url(${gridBackground})` }">
+
+      <div class="mwc center">
+
+        <section class="grid-layout pv6">
+          <div v-for="(tea, index) in teas" :key="index" :name=" '' + index " @click="showModal(tea)" class="grid-item pointer relative bg-white">
+            <span class="absolute top-0 left-0" :class="'bg-'+tea.color" style="width: 10px; height:10px; z-index: 2;"></span>
+            <div class="pa3">
+              <h2 class="f2 mt0 mb2">{{tea.title}}</h2>
+              <div class="absolute bottom-2 flex items-center" :class="tea.color">
+                <p class="ma0 fw8 mr2">Read more</p>
+                <no-ssr>
+                  <v-icon name="arrow-right" />
+                </no-ssr>
+              </div>
+            </div>
+            <div class="hide-child">
+              <span class="cover bg-center h-100 w-100 absolute top-0 right-0 left-0 child br3" v-bind:style="[ tea.image ? { 'background-image': 'url(' + tea.image + ')' } : { 'background-color': '#25324e' } ]"></span>
             </div>
           </div>
-          <div class="hide-child">
-            <span class="cover bg-center h-100 w-100 absolute top-0 right-0 left-0 child br3" v-bind:style="[ tea.image ? { 'background-image': 'url(' + tea.image + ')' } : { 'background-color': '#25324e' } ]"></span>
+        </section>
+
+      </div>
+
+      <section>
+
+        <modal v-show="isModalVisible" @close="closeModal" class="z-5">
+          <div slot="title" class="flex justify-center">
+            <h2 class=" lh-title mt0 mb2 pb1 bw2 bb b--blue dib f2 tc underline-skip">{{selectedTea.title}}</h2>
           </div>
-        </div>
+          <div slot="image" v-if="selectedTea.image" class="mb3">
+            <img :src="selectedTea.image" alt="selectedTea.image">
+          </div>
+          <div slot="ingredients">
+            <h3 class="bb b--blue lh-title  mt0 mb2 dib pb1 bw2">Ingredients</h3>
+            <p class="mt0 lh-copy">{{selectedTea.ingredients}}</p>
+          </div>
+          <div slot="description">
+            <h3 class="bb b--blue lh-title  mt0 mb2 dib pb1 bw2">Description</h3>
+            <p class="mt0 lh-copy">{{selectedTea.description}}</p>
+          </div>
+          <div slot="notes">
+            <h3 class="bb b--blue lh-title  mt0 mb2 dib pb1 bw2">Notes</h3>
+            <p class="mt0 lh-copy">{{selectedTea.notes}}</p>
+          </div>
+          <div slot="guide">
+            <h3 class="bb b--blue lh-title mt0 mb2 dib pb1 bw2">Guide</h3>
+            <p class="mt0 lh-copy">{{selectedTea.guide}}</p>
+          </div>
+          <div slot="keywords">
+            <ul class="pa0 ma0 list">
+              <li v-for="(keyword, index) in keywordSplit" v-bind:key="`keyword-${index}`" class="dib pa2 bg-blue br1 mr2 near-white">{{keyword}}</li>
+            </ul>
+          </div>
+          <div slot="button">
+            <button class="snipcart-add-item ttu tc f7 fw8 no-underline pv3 ph3 dib pointer bn bg-blue near-white bg-animate  hover-bg-blue br2" v-bind:data-item-id="'td-' + uglifyTitle" v-bind:data-item-name="selectedTea.title" v-bind:data-item-price="selectedTea.price"
+              data-item-url="/">Add to cart
+                  </button>
+          </div>
+        </modal>
+
       </section>
+
     </div>
 
-    <section>
+  </main>
 
-      <modal v-show="isModalVisible" @close="closeModal" class="z-5">
-        <div  slot="title" class="flex justify-center">
-          <h2 class=" lh-title mt0 mb2 pb1 bw2 bb b--blue dib f2 tc underline-skip">{{selectedTea.title}}</h2>
-        </div>
-        <div slot="image" v-if="selectedTea.image" class="mb3">
-          <img :src="selectedTea.image" alt="selectedTea.image">
-        </div>
-        <div slot="ingredients">
-          <h3 class="bb b--blue lh-title  mt0 mb2 dib pb1 bw2">Ingredients</h3>
-          <p class="mt0 lh-copy">{{selectedTea.ingredients}}</p>
-        </div>
-        <div slot="description">
-          <h3 class="bb b--blue lh-title  mt0 mb2 dib pb1 bw2">Description</h3>
-          <p class="mt0 lh-copy">{{selectedTea.description}}</p>
-        </div>
-        <div slot="notes">
-          <h3 class="bb b--blue lh-title  mt0 mb2 dib pb1 bw2">Notes</h3>
-          <p class="mt0 lh-copy">{{selectedTea.notes}}</p>
-        </div>
-        <div slot="guide">
-          <h3 class="bb b--blue lh-title mt0 mb2 dib pb1 bw2">Guide</h3>
-          <p class="mt0 lh-copy">{{selectedTea.guide}}</p>
-        </div>
-        <div slot="keywords">
-          <ul class="pa0 ma0 list">
-            <li v-for="(keyword, index) in keywordSplit" v-bind:key="`keyword-${index}`" class="dib pa2 bg-blue br1 mr2 near-white">{{keyword}}</li>
-          </ul>
-        </div>
-        <div slot="button">
-          <button class="snipcart-add-item ttu tc f7 fw8 no-underline pv3 ph3 dib pointer bn bg-blue near-white bg-animate  hover-bg-blue br2" v-bind:data-item-id="'td-' + uglifyTitle" v-bind:data-item-name="selectedTea.title" v-bind:data-item-price="selectedTea.price"
-            data-item-url="/">Add to cart
-                  </button>
-        </div>
-      </modal>
-
-    </section>
-  </div>
-
-</div>
-
-</div>
+</article>
 </template>
 
 <script>
