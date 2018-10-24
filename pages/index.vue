@@ -143,7 +143,7 @@ export default {
 
 .grid-layout {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(10em, 10em));
+    grid-template-columns: repeat(auto-fill, minmax(10em, 15em));
     @include mq(l) {
         grid-template-columns: repeat(4, minmax(15em, 10em));
     }
@@ -156,7 +156,7 @@ export default {
 }
 
 .grid-item {
-    border-radius: 5px;
+    // border-radius: 5px;
     display: flex;
     justify-content: start;
     align-items: center;
