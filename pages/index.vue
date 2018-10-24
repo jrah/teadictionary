@@ -24,8 +24,8 @@
 
 <div>
 
-  <div class="relative ph5-ns ph4">
-    <div class="mwc center">
+  <div class="relative ph5-ns ph4 cover" :style="{ backgroundImage: `url(${gridBackground})` }">
+    <div class="mwc center flex justify-center">
       <section class="grid-layout">
         <div v-for="(tea, index) in teas" :key="index" :name=" '' + index " @click="showModal(tea)" class="grid-item pointer relative">
           <span class="absolute top-0 left-0 bg-navy" style="width: 5px; height:5px; z-index: 2;"></span>
@@ -85,14 +85,16 @@
 
 <script>
 import modal from '~/components/Modal.vue';
-
+import gridBackground from '~/assets/images/dalmatian.svg'
 export default {
   components: {
     modal
   },
   data() {
     return {
-      title: 'Tea Dictionary'
+      title: 'Tea Dictionary',
+      gridBackground,
+      isModalVisible: false
     }
   },
   async asyncData({
@@ -127,11 +129,6 @@ export default {
       this.isModalVisible = false;
     },
   },
-  data() {
-    return {
-      isModalVisible: false
-    }
-  }
 }
 </script>
 
@@ -140,6 +137,11 @@ export default {
 <style scoped lang="scss">
 @import "assets/scss/mixins";
 @import "assets/scss/variables";
+
+.bg-dalmatian {
+  background-image: url('~assets/images/logo.svg');
+  background-size: cover;
+}
 
 .grid-layout {
     display: grid;
@@ -152,7 +154,6 @@ export default {
     grid-auto-flow: dense;
     // padding: 10px;
     transition: all 1s;
-    justify-content: center;
 }
 
 .grid-item {
