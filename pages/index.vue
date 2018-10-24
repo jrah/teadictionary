@@ -10,14 +10,16 @@
       <h1 class="mt0 f2 mb3 fw8 lh-title">Tea Dictionary</h1>
       <p class="lh-copy ma0 z-1">Artisan loose leaf tea curators DiversiTea in collaboration with the famous South Korean speciality kitchen KOPAN have worked to curate four different types of amazing teas that compliment and reflect the characteristics of Korean cuisine.</p>
     </div>
-          <div class="overlay absolute db top-0 left-0 bottom-0 right-0 z-1" style="background-image: linear-gradient(205deg,rgba(37, 37, 37, 0.23), rgba(10, 10, 10, 0.72));"></div>
+    <div class="overlay absolute db top-0 left-0 bottom-0 right-0 z-1" style="background-image: linear-gradient(205deg,rgba(37, 37, 37, 0.23), rgba(10, 10, 10, 0.72));"></div>
   </div>
 
 
-  <div class="relative ph5-ns ph4 pv3">
+<div class="bg-white z-5 relative" style="margin-top: -4rem;">
+
+  <div class="relative ph5-ns ph4">
     <div class="mwc center">
-      <section class="grid-layout pv3">
-        <div v-for="(tea, index) in teas" :key="index" :name=" '' + index " @click="showModal(tea)" class="grid-item pointer grow">
+      <section class="grid-layout pv3 bg-near-white">
+        <div v-for="(tea, index) in teas" :key="index" :name=" '' + index " @click="showModal(tea)" class="grid-item pointer relative">
           <span class="absolute top-0 left-0 bg-navy" style="width: 5px; height:5px; z-index: 2;"></span>
           <div>
             <h2 class="f3">{{tea.title}}</h2>
@@ -67,6 +69,9 @@
 
     </section>
   </div>
+
+</div>
+
 </div>
 </template>
 
