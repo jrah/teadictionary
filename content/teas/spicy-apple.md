@@ -1,6 +1,7 @@
 ---
 templateKey: tea.template
-title: Spicy Apple (example!)
+title: Spicy Apple
+price: '5'
 description: >
   Various flower petals lend a gorgeous, magical fragrance blend to this
   soothing, caffeine-free Earl Grey tea. Can be enjoyed at any time of day but
@@ -17,5 +18,6 @@ notes: >+
   marigold, and cornflower.
 
 guide: Add one teaspoon to a cup of 100° C water and steep for 4 minutes.
+color: orange
 ---
 
