@@ -7,5 +7,6 @@ ingredients: test
 keywords: test
 notes: test
 guide: test
+color: yellow
 ---
 
