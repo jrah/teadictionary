@@ -26,8 +26,8 @@
 <div>
 
   <div class="relative ph5-ns ph4 cover" :style="{ backgroundImage: `url(${gridBackground})` }">
-    <div class="mwc center flex justify-center">
-      <section class="grid-layout pv4">
+    <div class="mwc center">
+      <section class="grid-layout pv6">
         <div v-for="(tea, index) in teas" :key="index" :name=" '' + index " @click="showModal(tea)" class="grid-item pointer relative bg-white">
           <span class="absolute top-0 left-0" :class="'bg-'+tea.color" style="width: 10px; height:10px; z-index: 2;"></span>
           <div class="pa3">
@@ -49,7 +49,9 @@
     <section>
 
       <modal v-show="isModalVisible" @close="closeModal" class="z-5">
-        <h2 slot="title" class="bb b--blue lh-title mt0 mb2 pb1 bw2 f2 tc">{{selectedTea.title}}</h2>
+        <div  slot="title" class="flex justify-center">
+          <h2 class=" lh-title mt0 mb2 pb1 bw2 bb b--blue dib f2 tc underline-skip">{{selectedTea.title}}</h2>
+        </div>
         <div slot="image" v-if="selectedTea.image" class="mb3">
           <img :src="selectedTea.image" alt="selectedTea.image">
         </div>
@@ -155,6 +157,7 @@ export default {
     grid-auto-flow: dense;
     // padding: 10px;
     transition: all 1s;
+    justify-content: center;
 }
 
 .grid-item {
@@ -173,4 +176,5 @@ export default {
     grid-column-end: span 3;
     grid-row-end: span 4;
 }
+
 </style>
