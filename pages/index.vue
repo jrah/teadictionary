@@ -14,11 +14,11 @@
   </div>
 
 
-<div class="bg-white z-5 relative" style="margin-top: -4rem;">
+<div>
 
   <div class="relative ph5-ns ph4">
     <div class="mwc center">
-      <section class="grid-layout pv3 bg-near-white">
+      <section class="grid-layout">
         <div v-for="(tea, index) in teas" :key="index" :name=" '' + index " @click="showModal(tea)" class="grid-item pointer relative">
           <span class="absolute top-0 left-0 bg-navy" style="width: 5px; height:5px; z-index: 2;"></span>
           <div>
@@ -139,10 +139,10 @@ export default {
     @include mq(l) {
         grid-template-columns: repeat(4, minmax(15em, 10em));
     }
-    grid-gap: 1em;
+    // grid-gap: 1em;
     grid-auto-rows: minmax(15em, auto);
     grid-auto-flow: dense;
-    padding: 10px;
+    // padding: 10px;
     transition: all 1s;
     justify-content: center;
 }
