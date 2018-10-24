@@ -20,21 +20,22 @@
     </div>
     <div class="overlay absolute db top-0 left-0 bottom-0 right-0 z-1" style="background-image: linear-gradient(205deg,rgba(37, 37, 37, 0.23), rgba(10, 10, 10, 0.72));"></div>
   </div>
+  <section>
 
-
+  </section>
 <div>
 
   <div class="relative ph5-ns ph4 cover" :style="{ backgroundImage: `url(${gridBackground})` }">
     <div class="mwc center flex justify-center">
-      <section class="grid-layout">
-        <div v-for="(tea, index) in teas" :key="index" :name=" '' + index " @click="showModal(tea)" class="grid-item pointer relative">
-          <span class="absolute top-0 left-0 bg-navy" style="width: 5px; height:5px; z-index: 2;"></span>
-          <div>
-            <h2 class="f3">{{tea.title}}</h2>
+      <section class="grid-layout pv4">
+        <div v-for="(tea, index) in teas" :key="index" :name=" '' + index " @click="showModal(tea)" class="grid-item pointer relative bg-white">
+          <span class="absolute top-0 left-0 bg-navy" style="width: 10px; height:10px; z-index: 2;"></span>
+          <div class="pa2 tc">
+            <h2 class="f3 mt0 mb3">{{tea.title}}</h2>
             <p>Read more</p>
           </div>
           <div class="hide-child">
-            <span class="cover bg-center h-100 w-100 absolute top-0 right-0 left-0 child" v-bind:style="[ tea.image ? { 'background-image': 'url(' + tea.image + ')' } : { 'background-color': '#25324e' } ]"></span>
+            <span class="cover bg-center h-100 w-100 absolute top-0 right-0 left-0 child br3" v-bind:style="[ tea.image ? { 'background-image': 'url(' + tea.image + ')' } : { 'background-color': '#25324e' } ]"></span>
           </div>
         </div>
       </section>
@@ -85,7 +86,7 @@
 
 <script>
 import modal from '~/components/Modal.vue';
-import gridBackground from '~/assets/images/dalmatian.svg'
+import gridBackground from '~/assets/images/Liquid-Cheese-2.svg'
 export default {
   components: {
     modal
@@ -149,7 +150,7 @@ export default {
     @include mq(l) {
         grid-template-columns: repeat(4, minmax(15em, 10em));
     }
-    // grid-gap: 1em;
+    grid-gap: 1em;
     grid-auto-rows: minmax(15em, auto);
     grid-auto-flow: dense;
     // padding: 10px;
@@ -157,9 +158,9 @@ export default {
 }
 
 .grid-item {
-    // border-radius: 5px;
+    border-radius: .5rem;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
 }
 
