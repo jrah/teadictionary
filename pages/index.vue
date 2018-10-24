@@ -29,10 +29,15 @@
     <div class="mwc center flex justify-center">
       <section class="grid-layout pv4">
         <div v-for="(tea, index) in teas" :key="index" :name=" '' + index " @click="showModal(tea)" class="grid-item pointer relative bg-white">
-          <span class="absolute top-0 left-0 bg-navy" style="width: 10px; height:10px; z-index: 2;"></span>
-          <div class="pa2 tc">
-            <h2 class="f3 mt0 mb3">{{tea.title}}</h2>
-            <p>Read more</p>
+          <span class="absolute top-0 left-0" :class="'bg-'+tea.color" style="width: 10px; height:10px; z-index: 2;"></span>
+          <div class="pa3">
+            <h2 class="f2 mt0 mb2">{{tea.title}}</h2>
+            <div class="absolute bottom-2 flex items-center" :class="tea.color">
+              <p class="ma0 fw8 mr2">Read more</p>
+              <no-ssr>
+                <v-icon name="arrow-right"/>
+              </no-ssr>
+            </div>
           </div>
           <div class="hide-child">
             <span class="cover bg-center h-100 w-100 absolute top-0 right-0 left-0 child br3" v-bind:style="[ tea.image ? { 'background-image': 'url(' + tea.image + ')' } : { 'background-color': '#25324e' } ]"></span>
@@ -43,8 +48,8 @@
 
     <section>
 
-      <modal v-show="isModalVisible" @close="closeModal" class="z-3">
-        <h2 slot="title" class="bb b--blue lh-title mt0 mb2 dib pb1 bw2 f2">{{selectedTea.title}}</h2>
+      <modal v-show="isModalVisible" @close="closeModal" class="z-5">
+        <h2 slot="title" class="bb b--blue lh-title mt0 mb2 pb1 bw2 f2 tc">{{selectedTea.title}}</h2>
         <div slot="image" v-if="selectedTea.image" class="mb3">
           <img :src="selectedTea.image" alt="selectedTea.image">
         </div>
@@ -86,7 +91,7 @@
 
 <script>
 import modal from '~/components/Modal.vue';
-import gridBackground from '~/assets/images/Liquid-Cheese-2.svg'
+import gridBackground from '~/assets/images/cheese.svg'
 export default {
   components: {
     modal
@@ -139,11 +144,6 @@ export default {
 @import "assets/scss/mixins";
 @import "assets/scss/variables";
 
-.bg-dalmatian {
-  background-image: url('~assets/images/logo.svg');
-  background-size: cover;
-}
-
 .grid-layout {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(10em, 15em));
@@ -160,7 +160,7 @@ export default {
 .grid-item {
     border-radius: .5rem;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 
