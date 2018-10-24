@@ -1,14 +1,22 @@
 <template>
 <div>
 
-  <div class="mwc ph5-ns ph4 pv3">
-      <img src="~assets/images/logo.svg" class="db h2 w4" alt="Logo">
+<div class="absolute top-0 left-0 right-0 z-5 w-100">
+  <div class="mwc ph5-ns ph4 pv3 flex items-center justify-between">
+      <img src="~assets/images/logo.svg" class="w4 white" alt="Logo">
+      <nav>
+        <a href="/" class="white no-underline fw8">Link</a>
+        <a href="/" class="white no-underline fw8">Link</a>
+        <a href="/" class="white no-underline fw8">Link</a>
+      </nav>
   </div>
-
-  <div class="cover bg-center vh-75 relative" style="background-image:url('https://source.unsplash.com/Oaqk7qqNh_c')">
-    <div  class="mwc ph5-ns ph4 pv3 white z-2 relative">
-      <h1 class="mt0 f2 mb3 fw8 lh-title">Tea Dictionary</h1>
-      <p class="lh-copy ma0 z-1">Artisan loose leaf tea curators DiversiTea in collaboration with the famous South Korean speciality kitchen KOPAN have worked to curate four different types of amazing teas that compliment and reflect the characteristics of Korean cuisine.</p>
+</div>
+  <div class="cover bg-center vh-75 relative flex items-center bg-navy" style="background-image:url('https://source.unsplash.com/XmTZmASn3Dc')">
+    <div class="mwc ph5-ns ph4 pv3 z-2 relative">
+      <div  class="white w-33-l">
+          <h1 class="mt0 f1 mb2 fw8 lh-title">Tea Dictionary</h1>
+          <p class="lh-copy ma0 z-1 fw8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque illum, aut illo omnis ipsum minus laborum, voluptates odio eum quas animi deserunt, assumenda ducimus nam!</p>
+      </div>
     </div>
     <div class="overlay absolute db top-0 left-0 bottom-0 right-0 z-1" style="background-image: linear-gradient(205deg,rgba(37, 37, 37, 0.23), rgba(10, 10, 10, 0.72));"></div>
   </div>
@@ -34,7 +42,7 @@
 
     <section>
 
-      <modal v-show="isModalVisible" @close="closeModal">
+      <modal v-show="isModalVisible" @close="closeModal" class="z-3">
         <h2 slot="title" class="bb b--blue lh-title mt0 mb2 dib pb1 bw2 f2">{{selectedTea.title}}</h2>
         <div slot="image" v-if="selectedTea.image" class="mb3">
           <img :src="selectedTea.image" alt="selectedTea.image">
