@@ -1,19 +1,29 @@
 <template>
 
-<div class="ph5-ns ph4 pv3 bg-near-white">
+<div class="ph5-ns ph4 pv3">
+
   <div class="h1 w4">
     <img src="~assets/images/logo.svg" alt="Logo">
   </div>
+
   <div class="mwc center">
     <div class="mw7 center tc mwc ph5-ns ph4 pb5-ns pt4  mb5 mb0-ns">
       <h1 class="mt0 f2 mb3 lh-title">Tea Dictionary</h1>
       <p class="lh-copy ma0">Artisan loose leaf tea curators DiversiTea in collaboration with the famous South Korean speciality kitchen KOPAN have worked to curate four different types of amazing teas that compliment and reflect the characteristics of Korean cuisine.</p>
     </div>
+
     <div class="relative">
       <div class="mwc center">
         <section class="grid-layout pv3">
-          <div v-for="(tea, index) in teas" :key="index" :name=" '' + index " @click="showModal(tea)" class="grid-item cover bg-center pointer white grow" v-bind:style="[ tea.image ? { 'background-image': 'url(' + tea.image + ')' } : { 'background-color': '#25324e' } ]">
-            <h2  class="f3 tc">{{tea.title}}</h2>
+          <div v-for="(tea, index) in teas" :key="index" :name=" '' + index " @click="showModal(tea)" class="grid-item pointer grow">
+            <span class="absolute top-0 left-0 bg-navy" style="width: 5px; height:5px; z-index: 2;"></span>
+            <div>
+              <h2 class="f3">{{tea.title}}</h2>
+              <p>Read more</p>
+            </div>
+            <div class="hide-child">
+              <span class="cover bg-center h-100 w-100 absolute top-0 right-0 left-0 child" v-bind:style="[ tea.image ? { 'background-image': 'url(' + tea.image + ')' } : { 'background-color': '#25324e' } ]"></span>
+            </div>
           </div>
         </section>
       </div>
@@ -68,6 +78,7 @@
 
 <script>
 import modal from '~/components/Modal.vue';
+
 export default {
   components: {
     modal
@@ -120,14 +131,15 @@ export default {
 <style scoped lang="scss">
 @import "assets/scss/mixins";
 @import "assets/scss/variables";
+
 .grid-layout {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(10em, 10em));
     @include mq(l) {
-      grid-template-columns: repeat(4, minmax(10em, 10em));
+      grid-template-columns: repeat(4, minmax(15em, 10em));
     }
-    grid-gap: .75em;
-    grid-auto-rows: minmax(10em, auto);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(15em, auto);
     grid-auto-flow: dense;
     padding: 10px;
     transition: all 1s;
@@ -137,7 +149,7 @@ export default {
 .grid-item {
     border-radius: 5px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 
