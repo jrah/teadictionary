@@ -42,7 +42,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Intro, name: intro, widget: markdown}
           - label: Splash
             name: splash
-            widget: list
+            widget: object
             fields:
               - {label: Title, name: title, widget: string}
               - {label: Text Splash, name: text, widget: text}
