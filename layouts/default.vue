@@ -1,8 +1,22 @@
 <template>
   <div>
     <nuxt/>
+    <app-footer/>
   </div>
 </template>
+
+
+<script>
+import appFooter from '~/components/Footer.vue'
+
+export default {
+  components: {
+    appFooter
+  }
+}
+</script>
+
+
 
 <style lang="scss">
 
