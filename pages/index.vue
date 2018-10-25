@@ -17,8 +17,8 @@
   <div class="cover bg-center vh-75 relative flex items-center bg-navy" style="background-image:url('https://source.unsplash.com/XmTZmASn3Dc')">
     <div class="mwc ph5-ns ph4 pv3 z-2 relative">
       <div class="white w-33-l">
-        <h1 class="mt0 f1 mb2 fw8 lh-title">Tea Dictionary</h1>
-        <p class="lh-copy ma0 z-1 fw8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque illum, aut illo omnis ipsum minus laborum, voluptates odio eum quas animi deserunt, assumenda ducimus nam!</p>
+        <h1 class="mt0 f1 mb2 fw8 lh-title">{{home.title}}</h1>
+        <p class="lh-copy ma0 z-1 fw8">{{home.intro}}</p>
       </div>
     </div>
     <div class="overlay absolute db top-0 left-0 bottom-0 right-0 z-1" style="background-image: linear-gradient(205deg,rgba(37, 37, 37, 0.23), rgba(10, 10, 10, 0.72));"></div>
@@ -28,11 +28,20 @@
 
   <main>
 
+    <section class="ph5-ns ph4 pv6">
+      <div class="mwc">
+        <div class="mw7 center tc navy">
+          <h1 class="lh-solid mt0 mb3 f2 fw8">{{home.splash.title}}</h1>
+          <p class="lh-copy ma0 f4">{{home.splash.text}}</p>
+        </div>
+      </div>
+    </section>
+
     <div class="relative ph5-ns ph4 cover" :style="{ backgroundImage: `url(${gridBackground})` }">
 
       <div class="mwc center">
 
-        <section class="grid-layout pv6">
+        <section class="grid-layout pb6">
           <div v-for="(tea, index) in teas" :key="index" :name=" '' + index " @click="showModal(tea)" class="grid-item pointer relative bg-white">
             <span class="absolute top-0 left-0" :class="'bg-'+tea.color" style="width: 10px; height:10px; z-index: 2;"></span>
             <div class="pa3">
@@ -101,6 +110,7 @@
 <script>
 import modal from '~/components/Modal.vue';
 import gridBackground from '~/assets/images/cheese.svg'
+import home from '~/content/home.json'
 export default {
   components: {
     modal
@@ -109,7 +119,8 @@ export default {
     return {
       title: 'Tea Dictionary',
       gridBackground,
-      isModalVisible: false
+      isModalVisible: false,
+      home
     }
   },
   async asyncData({
