@@ -1,5 +1,13 @@
 {
-  "href_instagram": "https://www.instagram.com/diversiteabox",
-  "href_facebook": "https://www.facebook.com/diversiteabox",
-  "title_global": "DiversiTea"
+  "title_global": "DiversiTea",
+  "social": [
+    {
+      "type": "facebook",
+      "href": "https://www.facebook.com/diversiteabox"
+    },
+    {
+      "type": "instagram",
+      "href": "https://www.instagram.com/diversiteabox"
+    }
+  ]
 }
