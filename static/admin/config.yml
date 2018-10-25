@@ -34,9 +34,15 @@ collections: # A list of collections the CMS should be able to edit
   - label: "Pages"
     name: "pages"
     files:
-      - label: "Front Page"
-        name: "about"
-        file: "content/front.yml"
+      - label: "Home Page"
+        name: "home"
+        file: "content/home.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
+          - label: Splash
+            name: splash
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Text Splash, name: text, widget: text}
