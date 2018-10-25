@@ -1,1 +1,8 @@
-{}
+{
+  "title": "Tea Dictionary",
+  "intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque illum, aut illo omnis ipsum minus laborum, voluptates odio eum quas animi deserunt, assumenda ducimus nam!",
+  "splash": {
+    "title": "Lorem ipsum dolor sit amet.",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam minima quis aut sint, eaque amet, non dignissimos magnam rerum incidunt reiciendis, molestiae culpa soluta illum!\n\n"
+  }
+}
