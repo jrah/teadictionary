@@ -123,7 +123,7 @@
           </div>
         </div>
         <div class="flex-ns justify-center footerBg-half near-black">
-          <div class="bg-white br2 z-2 relative pa4" style="box-shadow: 0px 0px 8px 2px rgba(208, 208, 208, 0.12);">
+          <div class="bg-white br2-ns z-2 relative pa4" style="box-shadow: 0px 0px 8px 2px rgba(208, 208, 208, 0.12);">
             <div class="flex-l justify-between">
               <app-form class="w-50-l"/>
 
