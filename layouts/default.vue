@@ -116,4 +116,10 @@ html {
   }
 }
 
+.input-focus {
+  &:focus {
+    border-color: currentColor;
+  }
+}
+
 </style>
