@@ -4,5 +4,23 @@
   "splash": {
     "title": "Lorem ipsum dolor sit amet.",
     "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam minima quis aut sint, eaque amet, non dignissimos magnam rerum incidunt reiciendis, molestiae culpa soluta illum!\n\n"
+  },
+  "contact": {
+    "title": "Lorem ipsum dolor sit amet.",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam minima quis aut sint, eaque amet, non dignissimos magnam rerum incidunt reiciendis, molestiae culpa soluta illum!",
+    "point": [
+      {
+        "title": "Focus critical developer resources on your core business",
+        "text": "leaf"
+      },
+      {
+        "title": "Focus critical developer resources on your core [link](#)",
+        "text": "comments"
+      },
+      {
+        "title": "Focus critical developer resources on your core <mailto:team@diversitea.co>",
+        "text": "envelope-open"
+      }
+    ]
   }
 }
