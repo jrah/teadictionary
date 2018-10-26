@@ -126,7 +126,7 @@
         <div class="flex-ns justify-center footerBg-half near-black">
           <div class="bg-white br2-ns z-2 relative pa4" style="box-shadow: 0px 0px 8px 2px rgba(208, 208, 208, 0.12);">
             <div class="flex-l justify-between">
-              <app-form class="w-50-l"/>
+              <post class="w-50-l"/>
 
               <div class="w-40-l">
                 <h2 class="lh-title f3 mt0-ns dib pb1">Don't see a tea you like?</h2>
@@ -157,7 +157,7 @@
                   </div>
                   <p class="ma0 lh-copy">Focus critical developer resources on your core <a href="#" class="link blue">team@diversitea.co</a></p>
                 </div>
-                
+
               </div>
 
             </div>
@@ -173,14 +173,14 @@
 
 <script>
 import modal from '~/components/Modal.vue';
-import appForm from '~/components/Form.vue';
+import post from '~/components/Post.vue';
 import gridBackground from '~/assets/images/cheese.svg'
 import home from '~/content/home.json'
 
 export default {
   components: {
     modal,
-    appForm
+    post
   },
   data() {
     return {
