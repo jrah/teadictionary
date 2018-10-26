@@ -52,8 +52,7 @@ module.exports = {
   */
   plugins: [
     { src: '~/plugins/autoresponsive-vue', ssr: true },
-    { src: '~/plugins/font-awesome', ssr: true },
-    { src: '~/plugins/vue-filter', ssr: false }
+    { src: '~/plugins/font-awesome', ssr: true }
 
   ],
 
