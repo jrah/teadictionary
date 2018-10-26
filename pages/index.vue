@@ -113,7 +113,7 @@
     </div>
 
     <section class="relative overflow-hidden">
-      <div class="">
+
         <div class="bg-washed-blue ph5-ns ph4 pb4">
           <div class="mwc">
             <div class="mw7 center tc near-white">
@@ -122,6 +122,7 @@
             </div>
           </div>
         </div>
+
         <div class="flex-ns justify-center footerBg-half near-black">
           <div class="bg-white br2-ns z-2 relative pa4" style="box-shadow: 0px 0px 8px 2px rgba(208, 208, 208, 0.12);">
             <div class="flex-l justify-between">
@@ -129,6 +130,7 @@
 
               <div class="w-40-l">
                 <h2 class="lh-title f3 mt0-ns dib pb1">Don't see a tea you like?</h2>
+
                 <div class="flex items-center mb3">
                   <div class="mr3">
                     <no-ssr>
@@ -137,6 +139,7 @@
                   </div>
                   <p class="lh-copy ma0">Focus critical developer resources on your core business</p>
                 </div>
+
                 <div class="flex items-center mb3">
                   <div class="mr3">
                     <no-ssr>
@@ -145,6 +148,7 @@
                   </div>
                   <p class="ma0 lh-copy">Focus critical developer resources on your core <a href="#" class="link blue"> link</a></p>
                 </div>
+
                 <div class="flex items-center mb3">
                   <div class="mr3">
                     <no-ssr>
@@ -153,12 +157,13 @@
                   </div>
                   <p class="ma0 lh-copy">Focus critical developer resources on your core <a href="#" class="link blue">team@diversitea.co</a></p>
                 </div>
+                
               </div>
 
             </div>
           </div>
         </div>
-      </div>
+
     </section>
 
   </main>
