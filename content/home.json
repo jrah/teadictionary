@@ -10,16 +10,16 @@
     "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam minima quis aut sint, eaque amet, non dignissimos magnam rerum incidunt reiciendis, molestiae culpa soluta illum!",
     "points": [
       {
-        "title": "Focus critical developer resources on your core business",
-        "text": "leaf"
+        "paragraph": "Focus critical developer resources on your core business",
+        "icon": "leaf"
       },
       {
-        "title": "Focus critical developer resources on your core [link](#)",
-        "text": "comments"
+        "paragraph": "Focus critical developer resources on your core [link](#)",
+        "icon": "comments"
       },
       {
-        "title": "Focus critical developer resources on your core <mailto:team@diversitea.co>",
-        "text": "envelope-open"
+        "paragraph": "Focus critical developer resources on your core <mailto:team@diversitea.co>",
+        "icon": "envelope-open"
       }
     ]
   }

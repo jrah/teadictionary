@@ -56,7 +56,7 @@ collections: # A list of collections the CMS should be able to edit
                 name: points
                 widget: list
                 fields:
-                  - {label: Icon, name: text, widget: string}
+                  - {label: Icon, name: icon, widget: string}
                   - {label: Paragraph, name: paragraph, widget: markdown}
       - label: "General Settings"
         name: "site"
