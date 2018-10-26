@@ -4,8 +4,8 @@
 //  External Library Includes
 @import './node_modules/tachyons-sass/scss/normalize';
 // fix box-sizing for inputs
-input[type="text"] {
-  box-sizing: border-box;
+input {
+    box-sizing: border-box;
 }
 
 
