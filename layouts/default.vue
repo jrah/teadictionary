@@ -81,4 +81,39 @@ html {
 }
 
 
+.skew--from-right {
+  bottom: -100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    transform: skew(70deg);
+    transition: none;
+    z-index: 8;
+}
+
+.skew {
+  &--from-right {
+    bottom: -100%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 0;
+      transform: skew(80deg);
+      transition: none;
+  }
+  &--from-left {
+    bottom: -100%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 0;
+      transform: skew(-80deg);
+      transition: none;
+  }
+}
+
 </style>
