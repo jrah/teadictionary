@@ -28,7 +28,7 @@
 
   <main>
 
-    <section class="ph5-ns ph4 pv6">
+    <section class="ph5-ns ph4 pt6 pb4">
       <div class="mwc">
         <div class="mw7 center tc navy">
           <h1 class="lh-solid mt0 mb3 f2 fw8">{{home.splash.title}}</h1>
@@ -114,7 +114,7 @@
 
     <section class="relative overflow-hidden">
       <div class="">
-        <div class="bg-washed-blue ph5-ns ph4 pb6">
+        <div class="bg-washed-blue ph5-ns ph4 pb4">
           <div class="mwc">
             <div class="mw7 center tc near-white">
               <h1 class="lh-solid mt0 mb3 f2 fw8">{{home.splash.title}}</h1>
