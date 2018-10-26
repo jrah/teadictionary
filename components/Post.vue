@@ -1,7 +1,7 @@
 <template>
 
-      <form name="contact" action="" method="post" netlify-honeypot="bot-field" netlify>
-        <input type="hidden" name="contact" value="contact" />
+      <form name="contact" action="" method="post" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
         <p style="display: none;">
           <label>Don’t fill this out: <input name="bot-field"></label>
         </p>
