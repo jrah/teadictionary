@@ -86,7 +86,7 @@ module.exports = {
           nodeExternals({
             // default value for `whitelist` is
             // [/es6-promise|\.(?!(?:js|json)$).{1,5}$/i]
-            whitelist: [/es6-promise|\.(?!(?:js|json)$).{1,5}$/i, /^vue-awesome/]
+            exclude: /node_modules(?![\\/]vue-awesome[\\/])/
           })
         ]
       }
