@@ -55,7 +55,16 @@
               </div>
             </div>
             <div class="hide-child">
-              <span class="cover bg-center h-100 w-100 absolute top-0 right-0 left-0 child br3" v-bind:style="[ tea.image ? { 'background-image': 'url(' + tea.image + ')' } : { 'background-color': '#25324e' } ]"></span>
+              <span class="cover bg-center h-100 w-100 absolute top-0 right-0 left-0 child br3" v-bind:style="[ tea.image ? { 'background-image': 'url(' + tea.image + ')' } : { 'background-color': 'transparent' } ]"></span>
+            </div>
+          </div>
+          <div class="grid-item relative bg-white">
+            <span class="absolute top-0 left-0 bg-silver" style="width: 10px; height:10px; z-index: 2;"></span>
+            <div class="pa3 silver">
+              <h2 class="f2 mt0 mb2">More teas?</h2>
+              <div class="absolute bottom-2 flex items-center">
+                <p class="ma0 fw8 mr2">Coming soon...</p>
+              </div>
             </div>
           </div>
         </section>
