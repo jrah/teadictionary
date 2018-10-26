@@ -28,7 +28,7 @@
 
   <main>
 
-    <section class="ph5-ns ph4 pt6 pb4">
+    <section class="ph5-ns ph4 pt5 pb4">
       <div class="mwc">
         <div class="mw7 center tc navy">
           <h1 class="lh-solid mt0 mb3 f2 fw8">{{home.splash.title}}</h1>
