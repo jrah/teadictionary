@@ -14,7 +14,7 @@
     </div>
   </div>
 
-  <div class="cover bg-center vh-75 relative flex items-center bg-navy" style="background-image:url('https://source.unsplash.com/XmTZmASn3Dc')">
+  <div class="cover bg-center pv6 relative flex items-center bg-navy" style="background-image:url('https://source.unsplash.com/XmTZmASn3Dc')">
     <div class="mwc ph5-ns ph4 pv3 z-2 relative">
       <div class="white w-33-l">
         <h1 class="mt0 f1 mb2 fw8 lh-title">{{home.title}}</h1>
