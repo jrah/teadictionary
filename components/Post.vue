@@ -1,5 +1,5 @@
 <template>
-   <no-ssr>
+
       <form name="contact" action="" method="post" netlify-honeypot="bot-field" netlify>
         <input type="hidden" name="contact" value="contact" />
         <p style="display: none;">
@@ -26,7 +26,6 @@
         </div>
 
       </form>
-    </no-ssr>
 
 </template>
 <script>
