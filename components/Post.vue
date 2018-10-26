@@ -1,6 +1,10 @@
 <template>
 
-      <form name="contact" action="/thanks" method="post" netlify-honeypot="bot-field" netlify>
+      <form name="contact" action="" method="post" netlify-honeypot="bot-field" netlify>
+        <input type="hidden" name="contact" value="contact" />
+        <p style="display: none;">
+          <label>Don’t fill this out: <input name="bot-field"></label>
+        </p>
 
         <div class="form-group mb3">
           <label for="f_name" class="near-black lh-copy db mb1">Your name</label>
