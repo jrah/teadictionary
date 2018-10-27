@@ -11,10 +11,14 @@
     "points": [
       {
         "icon": "leaf",
-        "paragraph": "Focus critical developer resources on your [core](#)"
+        "paragraph": "Focus critical developer resources on your [core](#) {.ma0 .lh-copy}"
       },
       {
         "icon": "comments",
+        "paragraph": "Focus critical developer resources on your core {.ma0 .lh-copy}"
+      },
+      {
+        "icon": "envelope-open",
         "paragraph": "Focus critical developer resources on your core {.ma0 .lh-copy}"
       }
     ]
