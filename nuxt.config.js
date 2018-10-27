@@ -64,7 +64,8 @@ module.exports = {
     // '@nuxtjs/axios',
     'nuxtent',
     'nuxt-netlify-cms',
-    '@nuxtjs/markdownit'
+    '@nuxtjs/markdownit',
+    'nuxt-validate'
 
   ],
   netlifyCms: {
