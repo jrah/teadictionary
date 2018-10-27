@@ -12,16 +12,16 @@
   ],
   "nav": [
     {
-      "Text": "Link",
-      "Link": "#"
+      "text": "Link 1",
+      "href": "#"
     },
     {
-      "Text": "Link",
-      "Link": "#"
+      "text": "Link 2",
+      "href": "#"
     },
     {
-      "Text": "Link",
-      "Link": "#"
+      "text": "Link 3",
+      "href": "#"
     }
   ]
 }
