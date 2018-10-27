@@ -7,6 +7,21 @@
 input {
     box-sizing: border-box;
 }
+button,
+input {
+  &:disabled,
+  &[disabled] {
+    background-color: $light-gray;
+    color: $near-black;
+    cursor: not-allowed;
+    &:hover {
+      cursor: not-allowed;
+      background-color: inherit;
+      color: inherit;
+    }
+  }
+}
+
 
 
 //  Variables
