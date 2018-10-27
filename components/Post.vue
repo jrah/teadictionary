@@ -7,8 +7,8 @@
         </p>
 
         <div class="form-group mb3">
-          <label for="f_name" class="near-black lh-copy db mb1">Your name</label>
-          <input type="text" class="input-focus w-100 dib ba b--light-gray pa2 input-reset ba br1 outline-0 bg-near-white bg-animate hover-bg-white" required>
+          <label for="name" class="near-black lh-copy db mb1">Your name</label>
+          <input type="text" name="name" class="input-focus w-100 dib ba b--light-gray pa2 input-reset ba br1 outline-0 bg-near-white bg-animate hover-bg-white" required>
         </div>
 
         <div class="form-group  mb3">
