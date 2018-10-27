@@ -15,11 +15,11 @@
       },
       {
         "icon": "comments",
-        "paragraph": "Focus critical developer resources on your core [link](#) {.ma0 .lh-copy}"
+        "paragraph": "Focus critical developer resources on your core [link](#){.link .blue} {.ma0 .lh-copy}"
       },
       {
         "icon": "envelope-open",
-        "paragraph": "Focus critical developer resources on your core <mailto:team@diversitea.co> {.ma0 .lh-copy}"
+        "paragraph": "Focus critical developer resources on your core <mailto:team@diversitea.co>{.link .blue} {.ma0 .lh-copy}"
       }
     ]
   }
