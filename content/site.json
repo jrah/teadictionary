@@ -9,5 +9,19 @@
       "type": "instagram",
       "href": "https://www.instagram.com/diversiteabox"
     }
+  ],
+  "nav": [
+    {
+      "Text": "Link",
+      "Link": "#"
+    },
+    {
+      "Text": "Link",
+      "Link": "#"
+    },
+    {
+      "Text": "Link",
+      "Link": "#"
+    }
   ]
 }
