@@ -63,11 +63,20 @@ module.exports = {
     // axios seems to mess with the get of nuxtent
     // '@nuxtjs/axios',
     'nuxtent',
-    'nuxt-netlify-cms'
+    'nuxt-netlify-cms',
+    '@nuxtjs/markdownit'
+
   ],
   netlifyCms: {
     adminPath: 'secure'
   },
+  markdownit: {
+  linkify: true,
+  injected: true,
+  use: [
+    'markdown-it-attrs'
+  ]
+},
   /*
   ** Axios module configuration
   */
