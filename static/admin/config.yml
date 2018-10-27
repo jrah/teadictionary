@@ -70,3 +70,9 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: Type, name: type, widget: string}
               - {label: Link, name: href, widget: string}
+          - label: Navigation
+            name: nav
+            widget: list
+            fields:
+              - {label: text, name: Text, widget: string}
+              - {label: href, name: Link, widget: string}
