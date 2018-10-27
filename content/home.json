@@ -8,18 +8,18 @@
   "contact": {
     "title": "Lorem ipsum dolor sit amet.",
     "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam minima quis aut sint, eaque amet, non dignissimos magnam rerum incidunt reiciendis, molestiae culpa soluta illum!",
-    "points": [
+    "point": [
       {
-        "paragraph": "Focus critical developer resources on your core business",
-        "icon": "leaf"
+        "title": "{.class}\n\nFocus critical developer resources on your core business",
+        "text": "leaf"
       },
       {
-        "paragraph": "Focus critical developer resources on your core [link](#)",
-        "icon": "comments"
+        "title": "Focus critical developer resources on your core [link](#)",
+        "text": "comments"
       },
       {
-        "paragraph": "Focus critical developer resources on your core <mailto:team@diversitea.co>",
-        "icon": "envelope-open"
+        "title": "Focus critical developer resources on your core <mailto:team@diversitea.co>",
+        "text": "envelope-open"
       }
     ]
   }
