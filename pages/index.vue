@@ -7,9 +7,9 @@
     <div class="mwc ph5-ns ph4 pv3 flex items-center justify-between">
       <img src="~assets/images/logo.svg" class="w4 white" alt="Logo">
       <nav>
-        <a href="/" class="white no-underline fw8">Link</a>
-        <a href="/" class="white no-underline fw8">Link</a>
-        <a href="/" class="white no-underline fw8">Link</a>
+        <a v-for="(item, index) in site.nav" v-bind:key="`nav-${index}`" :href="item.href" :class="'white no-underline fw8 mr2'">{{item.text}}</a>
+        <!-- <a href="/" class="white no-underline fw8">Link</a>
+        <a href="/" class="white no-underline fw8">Link</a> -->
       </nav>
     </div>
   </div>
@@ -157,6 +157,7 @@ import modal from '~/components/Modal.vue';
 import post from '~/components/Post.vue';
 import gridBackground from '~/assets/images/cheese.svg'
 import home from '~/content/home.json'
+import site from '~/content/site.json'
 
 export default {
   components: {
@@ -170,7 +171,8 @@ export default {
       isModalVisible: false,
       home,
       test: "# Hello World",
-      model: '# Hello World!'
+      model: '# Hello World!',
+      site
     }
   },
   async asyncData({
