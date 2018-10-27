@@ -8,6 +8,15 @@
   "contact": {
     "title": "Lorem ipsum dolor sit amet.",
     "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam minima quis aut sint, eaque amet, non dignissimos magnam rerum incidunt reiciendis, molestiae culpa soluta illum!",
-    "point": []
+    "points": [
+      {
+        "icon": "leaf",
+        "paragraph": "Focus critical developer resources on your [core](#)"
+      },
+      {
+        "icon": "comments",
+        "paragraph": "Focus critical developer resources on your core {.ma0 .lh-copy}"
+      }
+    ]
   }
 }
