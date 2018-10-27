@@ -8,8 +8,6 @@
       <img src="~assets/images/logo.svg" class="w4 white" alt="Logo">
       <nav>
         <a v-for="(item, index) in site.nav" v-bind:key="`nav-${index}`" :href="item.href" :class="'white no-underline fw8 mr2'">{{item.text}}</a>
-        <!-- <a href="/" class="white no-underline fw8">Link</a>
-        <a href="/" class="white no-underline fw8">Link</a> -->
       </nav>
     </div>
   </div>
