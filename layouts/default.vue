@@ -1,17 +1,21 @@
 <template>
-  <div>
+  <main>
+    <app-navbar/>
     <nuxt/>
     <app-footer/>
-  </div>
+  </main>
 </template>
 
 
 <script>
+import site from '~/content/site.json'
+import appNavbar from '~/components/Navbar.vue'
 import appFooter from '~/components/Footer.vue'
 
 export default {
   components: {
-    appFooter
+    appFooter,
+    appNavbar
   }
 }
 </script>
