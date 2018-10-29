@@ -153,7 +153,7 @@
 <script>
 import modal from '~/components/Modal.vue';
 import post from '~/components/Post.vue';
-import gridBackground from '~/assets/images/wave.svg'
+import gridBackground from '~/assets/images/cheese.svg'
 import home from '~/content/home.json'
 import site from '~/content/site.json'
 
