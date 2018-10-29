@@ -3,15 +3,6 @@
 <div class="content">
   <header>
 
-    <div class="absolute top-0 left-0 right-0 z-5 w-100">
-      <div class="mwc ph5-ns ph4 pv3 flex items-center justify-between">
-        <img src="~assets/images/logo.svg" class="w4 white" alt="Logo">
-        <nav>
-          <a v-for="(item, index) in site.nav" v-bind:key="`nav-${index}`" :href="item.href" :class="'white no-underline fw8 mr2'">{{item.text}}</a>
-        </nav>
-      </div>
-    </div>
-
     <div class="cover bg-center pv6 relative flex items-center bg-navy" style="background-image:url('https://source.unsplash.com/XmTZmASn3Dc')">
       <div class="mwc ph5-ns ph4 pv3 z-2 relative">
         <div class="white w-33-l">
