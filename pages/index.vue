@@ -36,11 +36,11 @@
     </section>
 
 
-    <div class="relative">
+    <div class="relative ph5-ns ph4 cover" :style="{ backgroundImage: `url(${gridBackground})` }">
 
-      <div class="mwc center ph5-ns ph4">
+      <div class="mwc center">
 
-        <section class="grid-layout pb6 absolute left-0 right-0">
+        <section class="grid-layout pb6">
           <div v-for="(tea, index) in teas" :key="index" :name=" '' + index " @click="showModal(tea)" class="grid-item pointer relative bg-white">
             <span class="absolute top-0 left-0" :class="'bg-'+tea.color" style="width: 10px; height:10px; z-index: 2;"></span>
             <div class="pa3">
@@ -66,8 +66,8 @@
             </div>
           </div>
         </section>
+
       </div>
-      <img src="~/assets/images/cheese.svg" class="db w-100" alt="">
 
       <section>
 
