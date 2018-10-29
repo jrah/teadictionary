@@ -36,7 +36,7 @@
     </section>
 
 
-    <div class="relative ph5-ns ph4 cover" :style="{ backgroundImage: `url(${gridBackground})` }">
+    <div class="relative ph5-ns ph4 bg-bottom-l cover" :style="{ backgroundImage: `url(${gridBackground})` }">
 
       <div class="mwc center">
 
