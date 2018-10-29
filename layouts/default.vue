@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="site">
     <app-navbar/>
     <nuxt/>
     <app-footer/>
