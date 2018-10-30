@@ -12,7 +12,14 @@
 
       <nav v-bind:class="{ isOpen: isOpen }" class="navMenu--top">
         <!-- <span @click="closeNav(click)" class="pointer z-4">Close</span> -->
-        <a v-for="(item, index) in site.nav" v-bind:key="`nav-${index}`" :href="item.href" :class="'navMenu--top-item black dib-ns db no-underline'">{{item.text}}</a>
+        <a v-for="(item, index) in site.nav" v-bind:key="`nav-${index}`" :href="item.href" :class="'navMenu--top-item dib-ns db no-underline fw8 mr2-ns v-mid'">
+          <div class="dn-ns dib v-mid">
+            <no-ssr>
+              <v-icon name="home" scale="1.5"/>
+            </no-ssr>
+          </div>
+          <span class="dib">{{item.text}}</span>
+        </a>
       </nav>
 
     </div>
@@ -51,9 +58,11 @@ export default {
 // not scoped due to site-canvas on main
 .site-canvas {
   transition: 300ms ease transform;
+  background-color: $white;
 }
 .is-offcanvas {
   overflow: hidden;
+  background-color: $white;
   .site-canvas {
     transform: translateX(-60%);
   }
@@ -71,15 +80,28 @@ export default {
     width: 60%;
     height: 100%;
     position: absolute;
-    top: 0;
+    top: .5em;
     right: -60%;
 
     &-item {
       @include mq(ns) {
+        font-size: 1em;
         display: inline-block;
+        padding: 0;
+        border: 0;
+        color: $white;
+        margin: 0 .5rem;
+        &:hover {
+          color: $near-white;
+        }
       }
-      @include mq(ns) {
-        border-bottom: 0;
+      color: $navy;
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 1px solid $near-white;
+      font-size: 1.25em;
+      &:hover {
+        color: $red;
       }
     }
   }
