@@ -42,7 +42,7 @@ export default {
     },
     openNav() {
       this.isOpen = !this.isOpen;
-      let siteCanvas = document.body;
+      let siteCanvas = document.querySelector('#__nuxt');
       siteCanvas.classList.toggle('is-offcanvas');
     }
   }
