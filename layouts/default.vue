@@ -42,13 +42,13 @@ body {
 
     @if $size == ns {
 
-      @media screen and (min-width: #{map-get($mqs, ns)}) {
+      @media screen and (min-width: #{map-get($mqs, sm)}) {
         margin-left: auto;
         margin-right: auto;
         max-width:  55em;
       }
 
-    } @if $size == lg {
+    } @if $size == l {
 
       @media screen and (min-width: #{map-get($mqs, lg)}) {
         margin-left: auto;
@@ -58,7 +58,7 @@ body {
 
     } @if $size == m {
 
-      @media screen and (min-width: #{map-get($mqs, ns)}) and (max-width: #{map-get($mqs, lg)}) {
+      @media screen and (min-width: #{map-get($mqs, sm)}) and (max-width: #{map-get($mqs, lg)}) {
         margin-left: auto;
         margin-right: auto;
         max-width:  65em;
