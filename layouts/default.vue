@@ -1,11 +1,10 @@
 <template>
-  <main class="site">
+  <main class="site-canvas">
     <app-navbar/>
     <nuxt/>
     <app-footer/>
   </main>
 </template>
-
 
 <script>
 import site from '~/content/site.json'
