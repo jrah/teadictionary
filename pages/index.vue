@@ -24,7 +24,7 @@
     </div>
   </section>
 
-  <div class="relative ph5-ns ph4 bg-bottom-l vh-100 cover" :style="{ backgroundImage: `url(${gridBackground})` }">
+  <div class="relative ph5-ns ph4 bg-bottom-l cover" :style="{ backgroundImage: `url(${gridBackground})` }">
 
     <div class="mwc center">
       <section class="grid-layout pb6">
