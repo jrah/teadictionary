@@ -19,7 +19,7 @@
       },
       {
         "icon": "envelope-open",
-        "paragraph": "If you have any more enquiries, drop us an email using the contact form or at <mailto:team@diversitea.co>{.link .blue} {.ma0 .lh-copy}"
+        "paragraph": "If you have any more enquiries, drop us an email using the contact form or at [team@diversitea.co](mailto:team@diversitea.co){.link .blue} {.ma0 .lh-copy}"
       }
     ]
   }
