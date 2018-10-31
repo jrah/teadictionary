@@ -1,25 +1,25 @@
 {
-  "title": "Tea Dictionary",
-  "intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque illum, aut illo omnis ipsum minus laborum, voluptates odio eum quas animi deserunt, assumenda ducimus nam!",
+  "title": "DiversiTea Dictionary",
+  "intro": "From FTGFOP1 graded black tea to funky chocolate cake tea, DiversiTea has created a tea dictionary that you could take a tea tour around the world.",
   "splash": {
-    "title": "Lorem ipsum dolor sit amet.",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam minima quis aut sint, eaque amet, non dignissimos magnam rerum incidunt reiciendis, molestiae culpa soluta illum!\n\n"
+    "title": "Welcome to the tea dictionary",
+    "text": "We have gathered all the teas that we have curated so far, so feel free to have a look and order the teas that you fancy!\n\n"
   },
   "contact": {
-    "title": "Lorem ipsum dolor sit amet.",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam minima quis aut sint, eaque amet, non dignissimos magnam rerum incidunt reiciendis, molestiae culpa soluta illum!",
+    "title": "Do you have any questions?",
+    "text": "Please drop us an email if you have any questions regarding our tea, or any tea in general. We would be more than happy to answer them!",
     "points": [
       {
         "icon": "leaf",
-        "paragraph": "Focus critical developer resources on your core business {.ma0 .lh-copy}"
+        "paragraph": "Not sure what you could like? Take our **Tea quiz** {.ma0 .lh-copy}"
       },
       {
         "icon": "comments",
-        "paragraph": "Focus critical developer resources on your core [link](#){.link .blue} {.ma0 .lh-copy}"
+        "paragraph": "Drop us a direct message through our [Facebook](www.facebook.com/diversiteabox){.link .blue) or [Instagram](www.instagram.com/diversiteabox){.link .blue} {.ma0 .lh-copy}"
       },
       {
         "icon": "envelope-open",
-        "paragraph": "Focus critical developer resources on your core [team@diversitea.co](mailto:team@diversitea.co){.link .blue} {.ma0 .lh-copy}"
+        "paragraph": "If you have any more enquiries, drop us an email using the contact form or at <mailto:team@diversitea.co>{.link .blue} {.ma0 .lh-copy}"
       }
     ]
   }
