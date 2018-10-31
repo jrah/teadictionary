@@ -59,12 +59,16 @@ export default {
 .site-canvas {
   transition: 300ms ease transform;
   background-color: $white;
+  position: relative;
+  overflow: hidden;
 }
 .is-offcanvas {
-  overflow: hidden;
+  // overflow: hidden;
   background-color: $white;
   .site-canvas {
     transform: translateX(-60%);
+    position: inherit;
+    overflow: initial;
   }
 }
 .navMenu {
