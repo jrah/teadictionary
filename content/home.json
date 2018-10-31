@@ -1,6 +1,6 @@
 {
   "title": "Tea Dictionary",
-  "intro": "From FTGFOP1 graded black tea to funky chocolate cake tea, DiversiTea has created a tea dictionary that you could take a tea tour around the world.",
+  "intro": "From FTGFOP1 graded black tea to chocolate cake tea, DiversiTea has created a tea dictionary that will allow you to explore teas from all around the world.",
   "splash": {
     "title": "Welcome to the tea dictionary",
     "text": "We have gathered all the teas that we have curated so far, so feel free to have a look and order the teas that you fancy!\n\n"
@@ -11,7 +11,7 @@
     "points": [
       {
         "icon": "leaf",
-        "paragraph": "Not sure what you could like? Take our **Tea quiz** {.ma0 .lh-copy}"
+        "paragraph": "Not sure what tea you would like to try? Take our **Tea quiz** {.ma0 .lh-copy}"
       },
       {
         "icon": "comments",
