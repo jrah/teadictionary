@@ -35,12 +35,17 @@ body {
   max-width:  100%;
 }
 
+$mqs: (
+  sm: 30em,
+  lg: 64em,
+) !default;
+
 
 @each $size, $width in $mqs {
 
   .mwc {
 
-    @if $size == ns {
+    @if $size == sm {
 
       @media screen and (min-width: #{map-get($mqs, sm)}) {
         margin-left: auto;
@@ -48,7 +53,7 @@ body {
         max-width:  55em;
       }
 
-    } @if $size == l {
+    } @if $size == lg {
 
       @media screen and (min-width: #{map-get($mqs, lg)}) {
         margin-left: auto;
@@ -56,7 +61,7 @@ body {
         max-width:  72em;
       }
 
-    } @if $size == m {
+    } @else {
 
       @media screen and (min-width: #{map-get($mqs, sm)}) and (max-width: #{map-get($mqs, lg)}) {
         margin-left: auto;
