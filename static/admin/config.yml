@@ -23,6 +23,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Tasting notes", name: "notes", widget: "text"}
       - {label: "Brewing guide", name: "guide", widget: "text"}
       - {label: "Colour", name: "color", widget: "text"}
+      - {label: "Volume", name: "volume", widget: "text"}
       - label: "Carousel Images"
         name: "carousel_images"
         required: false
