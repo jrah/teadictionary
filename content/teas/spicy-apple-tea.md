@@ -12,7 +12,7 @@ ingredients: >+
   Dried apple, ginger and cornflower petals with the wonderful spicy flavours of
   cardamom, cloves, pepper, and cinnamon.
 
-keywords: 'Caramel, fruity, spicy, smooth, sweet'
+keywords: 'Caramel, Fruity, Spicy, Smooth, Sweet'
 notes: >-
   Rich and deep blend of spices on top of perfect flavour of apple. Lusciously
   fruity apple pieces meet aromatic and punchy ginger with warming sweetness of
