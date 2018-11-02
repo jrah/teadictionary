@@ -64,26 +64,34 @@
     <section>
 
       <modal v-show="isModalVisible" @close="closeModal" class="z-5">
-        <div slot="title" class="flex justify-center">
-          <h2 class=" lh-title mt0 mb2 pb1 bw2 bb b--blue dib f2 tc underline-skip">{{selectedTea.title}}</h2>
+        <div slot="title" class="flex justify-start ph4 pb0 pt3 bb bw1 b--near-white mb4">
+          <h2 class=" lh-title mt0 mb3 f2 tc underline-skip">{{selectedTea.title}}</h2>
         </div>
         <div slot="image" v-if="selectedTea.image" class="mb3">
           <img :src="selectedTea.image" alt="selectedTea.image">
         </div>
+        <div slot="price" class="mb2">
+          <h3 class="lh-title mt0 mb2 dn">Price</h3>
+          <span class="mt0 db fw8 near-black f2">{{'£' + selectedTea.price}}</span>
+        </div>
+        <div slot="volume">
+          <h3 class="h-title  mt0 mb2 pb1 bw2 dn">Around</h3>
+          <p class="mt0 lh-copy">{{'Around ' + selectedTea.volume + ' cups'}}</p>
+        </div>
         <div slot="ingredients">
-          <h3 class="bb b--blue lh-title  mt0 mb2 dib pb1 bw2">Ingredients</h3>
+          <h3 class="lh-title  mt0 mb2 dib pb1 bw2">Ingredients</h3>
           <p class="mt0 lh-copy">{{selectedTea.ingredients}}</p>
         </div>
         <div slot="description">
-          <h3 class="bb b--blue lh-title  mt0 mb2 dib pb1 bw2">Description</h3>
+          <h3 class="lh-title  mt0 mb2 dib pb1 bw2">Description</h3>
           <p class="mt0 lh-copy">{{selectedTea.description}}</p>
         </div>
         <div slot="notes">
-          <h3 class="bb b--blue lh-title  mt0 mb2 dib pb1 bw2">Notes</h3>
+          <h3 class="lh-title  mt0 mb2 dib pb1 bw2">Notes</h3>
           <p class="mt0 lh-copy">{{selectedTea.notes}}</p>
         </div>
         <div slot="guide">
-          <h3 class="bb b--blue lh-title mt0 mb2 dib pb1 bw2">Guide</h3>
+          <h3 class="lh-title mt0 mb2 dib pb1 bw2">Guide</h3>
           <p class="mt0 lh-copy">{{selectedTea.guide}}</p>
         </div>
         <div slot="keywords">

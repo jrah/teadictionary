@@ -1,8 +1,7 @@
 <template>
   <transition name="modal-fade">
     <div class="modal-backdrop">
-      <div class="modal relative bg-white near-black br2">
-
+      <div class="modal relative bg-white near-black br2 mwc ph5-ns ph4">
         <button @click="$emit('close')" class="bg-transparent near-black bn pointer absolute top-0 right-0 ma3 outline-0">
           <no-ssr>
             <v-icon name="window-close" scale="2"/>
@@ -11,12 +10,14 @@
         <slot name="title">
           <h2>Default Heading</h2>
         </slot>
-        <div class="flex-ns justify-between">
-          <div class="w-30-ns">
+        <div class="flex-l justify-between-m">
+          <div class="pa4 flex items-center flex-column">
             <slot name="image"></slot>
+              <slot name="price"></slot>
+              <slot name="volume"></slot>
             <slot name="button"></slot>
           </div>
-          <div class="w-60-ns">
+          <div class="ph4 flex flex-column justify-center bl-ns bn b--near-white">
             <slot name="description"></slot>
             <slot name="notes"></slot>
             <slot name="guide"></slot>
@@ -24,8 +25,7 @@
             <slot name="keywords"></slot>
           </div>
         </div>
-
-</div>
+      </div>
 
 
       </div>
@@ -67,7 +67,7 @@
   .modal {
     width: 100%;
     height: 100%;
-    padding: 3rem;
+    // padding: 3rem;
     overflow-y: auto;
   }
 
