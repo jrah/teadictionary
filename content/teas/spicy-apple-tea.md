@@ -21,5 +21,6 @@ guide: >-
   Steep one teaspoon of "Spicy Apple" in a cup of 95-100°C water for 4-6
   minutes.
 color: red
+volume: '10'
 ---
 
