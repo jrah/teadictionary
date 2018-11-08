@@ -120,6 +120,9 @@ export default {
       cursor: pointer;
     }
   }
+  .block-important {
+    display: block !important;
+  }
 }
 
 
