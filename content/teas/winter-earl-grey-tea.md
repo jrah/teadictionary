@@ -19,7 +19,7 @@ guide: >+
   Pour a cup of 100° C water with one teaspoon of "Winter Earl Grey" and let
   steep for 3-7 minutes..
 
-color: grey
+color: black
 volume: '10'
 carousel_images:
   - {}
