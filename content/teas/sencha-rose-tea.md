@@ -15,7 +15,7 @@ guide: >-
   One teaspoon of Sencha Rose is combined with one cup of 80°C water and infused
   for 20-30 seconds.
 color: pink
-volume: '14'
+volume: '10'
 carousel_images: []
 ---
 
