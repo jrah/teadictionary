@@ -1,6 +1,6 @@
 ---
 templateKey: tea.template
-title: Orangajuli TGFOP Assam Black Tea
+title: Orangajuli TGFOP Assam Tea
 price: '6.00'
 description: >+
   The delightfully tangy flavor of this tea lingers on your tongue even after
