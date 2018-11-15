@@ -1,6 +1,6 @@
 ---
 templateKey: tea.template
-title: Roasted Turmeric & Cocoa Tea
+title: Turmeric & Roasted Cocoa Tea
 price: '6.00'
 description: >-
   This tea is a little more adventurous than the others. We truly think this is
