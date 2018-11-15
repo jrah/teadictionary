@@ -16,7 +16,7 @@ notes: >-
   The refreshing, zesty flavor of citrus mingles with the light sweetness of
   peach and lychee.
 guide: Pour a cup of 75-85° C water with one teaspoon and steep for 2-3 minutes.
-color: orange-darker
+color: orange darker
 volume: '10'
 carousel_images:
   - {}
