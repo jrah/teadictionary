@@ -11,7 +11,7 @@ ingredients: >-
   Flavouring.
 notes: 'Warm spices of cardamom, chai, cinnamon, cloves, masala, and turmeric.'
 guide: Steep one teaspoon in one cup of 100° C water for 5-10 minutes.
-color: Yellow
+color: yellow
 volume: '10.0'
 carousel_images:
   - {}
