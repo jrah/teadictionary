@@ -13,7 +13,7 @@ notes: 'Delightful hint of grassy notes. Smooth, refreshing and clean.'
 guide: >-
   Pour a cup of 80-90° C water with one teaspoon of "Chunmee Taipan Superior"
   and let steep for 2-4 minutes. .
-color: Dark-blue
+color: dark-blue
 volume: '10.0'
 carousel_images:
   - {}
