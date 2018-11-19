@@ -13,7 +13,7 @@ notes: >-
 guide: >-
   Pour a cup of 95-100° C water with one teaspoon of "Kenya Wonder" and let
   steep for 3-4 minutes. Add milk or sugar if desired.
-color: Black
+color: black
 volume: '10.0'
 carousel_images:
   - {}
