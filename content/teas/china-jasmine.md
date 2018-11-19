@@ -1,6 +1,6 @@
 ---
 templateKey: tea.template
-title: China Jasmine
+title: China Jasmine Tea
 price: '6.00'
 description: >-
   Ring in the Chinese New Year with this festive green tea, unique with its
