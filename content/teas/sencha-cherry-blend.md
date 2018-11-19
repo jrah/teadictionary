@@ -10,7 +10,7 @@ notes: Delicate green tea flavour mingles with a subtle touch of cherry.
 guide: >-
   Infuse one teaspoon with a cup of 70-80° C water for 30 seconds, then infuse
   for another 20 seconds.
-color: Dark-green
+color: dark-green
 volume: '10.0'
 carousel_images:
   - {}
