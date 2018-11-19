@@ -14,7 +14,7 @@ notes: >-
 guide: >-
   Add one teaspoon China Jasmine to a cup of 70-80° C water and let steep for
   20-30 seconds.
-color: Blue
+color: blue
 volume: '10.0'
 carousel_images:
   - {}
