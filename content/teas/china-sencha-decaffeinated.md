@@ -1,6 +1,6 @@
 ---
 templateKey: tea.template
-title: 'China Sencha Decaffeinated '
+title: China Sencha Decaff
 price: '6.00'
 description: >-
   Sencha or “steeped tea” is especially popular in Japan, representing over 80%
