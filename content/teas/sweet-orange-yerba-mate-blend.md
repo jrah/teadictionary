@@ -1,6 +1,6 @@
 ---
 templateKey: tea.template
-title: Sweet Orange Yerba Mate Blend
+title: Sweet Orange Yerba Mate Blend Tea
 price: '6.00'
 description: >-
   This roasted tea from Argentina is a unique and interesting infusion, light
