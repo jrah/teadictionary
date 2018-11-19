@@ -1,6 +1,6 @@
 ---
 templateKey: tea.template
-title: Sencha Red Ginseng
+title: Sencha Red Ginseng Tea
 price: '6.00'
 description: >-
   Luxurious green tea is enhanced by sharp citrus flavours, passionfruit and
