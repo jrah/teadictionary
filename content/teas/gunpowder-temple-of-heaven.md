@@ -13,7 +13,7 @@ guide: >-
   Add one teaspoon Gunpowder Temple of Heaven to one cup of 70-80° C water and
   let steep for 20 seconds. To soften the leaves, first rinse with hot water
   then re-infuse.
-color: Dark-green
+color: dark-green
 volume: '10.0'
 carousel_images:
   - {}
