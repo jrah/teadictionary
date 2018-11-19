@@ -8,7 +8,7 @@ description: >-
 ingredients: 'Luxury Egyptian camomile, Luxury Washington peppermint.'
 notes: Egyptian camomile flowers combined with high quality peppermint leaves.
 guide: 'Infuse one to two teaspoon in one cup of 100° C water for 6-8 minutes. '
-color: Dark-yellow
+color: dark-yellow
 volume: '10.0'
 carousel_images:
   - {}
