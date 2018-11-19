@@ -1,6 +1,6 @@
 ---
 templateKey: tea.template
-title: Sencha Strawberry Lychee
+title: Sencha Strawberry Lychee Tea
 price: '6.00'
 description: >-
   A pleasantly unique green tea blend, this sencha is a real flavour sensation
