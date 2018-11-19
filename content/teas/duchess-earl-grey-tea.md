@@ -13,7 +13,7 @@ notes: >-
   bergamot oil for a full-bodied flavor you're sure to love. Refreshing and
   uplifting.
 guide: Infuse one teaspoon with one cup of 100° C water for 3-7 minutes.
-color: Blue
+color: blue
 volume: '10.0'
 carousel_images:
   - {}
