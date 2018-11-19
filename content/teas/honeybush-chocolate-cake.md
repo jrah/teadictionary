@@ -17,7 +17,7 @@ notes: >-
 guide: >-
   Pour one cup of 100ºc water with one teaspoon of “Honeybush Chocolate Cake”
   and steep for about 5 minutes.
-color: brown
+color: orange
 volume: '10.0'
 carousel_images:
   - {}
