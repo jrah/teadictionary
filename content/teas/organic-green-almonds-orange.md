@@ -1,6 +1,6 @@
 ---
 templateKey: tea.template
-title: Organic Green Almonds & Orange
+title: Green Almonds & Orange
 price: '6.00'
 description: >-
   We’ve hidden a little festival surprise in this tea. Sourced and blended great
