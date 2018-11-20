@@ -11,6 +11,7 @@ description: >-
   star tonight, brew up a nice warm cup of Winter Star Rooibos ;)
 image: /images/uploads/winterrooibos.png
 ingredients: 'Rooibos, Papaya Pieces, Almond Pieces'
+keywords: 'Nutty, Sweet, Refreshing, Cheerful, Smooth'
 notes: >-
   Wonderful nutty almond flavour mingles with a sweet marzipan aroma, deepening
   the distinct flavour of rooibos.
