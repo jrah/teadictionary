@@ -7,7 +7,9 @@ description: >-
   of consumption, but this one is from China which means it is less bitter than
   its Japanese cousin. It is a very high quality decaffeinated green tea,
   commonly served as an everyday beverage.
+image: /images/uploads/chinasenchadecaf.png
 ingredients: decaffeinated green tea
+keywords: 'Bright, Grassy, Refreshing, Relaxed, Smooth'
 notes: >-
   Grassy with a light bitterness, with a surprisingly fresh taste. You can also
   trace a light sweetness and mild tang.
