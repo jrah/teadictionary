@@ -9,6 +9,7 @@ description: >-
   drinking coffee after dinner.
 image: /images/uploads/spicedchai.png
 ingredients: 'Cloves, Cinnamon, Cardamon, Aniseed, Fennel, Liquorice & Lemongrass'
+keywords: 'Spicy, Malty, Deep, Coppery, Savory'
 notes: >-
   Chai has a particularly bold, spicy taste to it but still retains a hint of
   sweetness.
