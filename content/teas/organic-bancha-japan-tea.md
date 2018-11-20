@@ -8,7 +8,7 @@ description: >-
   is often seen as the lowest grade of Japanese green tea on the market, yet is
   still regarded as an excellent daily tea.
 image: /images/uploads/japanesesenchagreentea.png
-ingredients: pure Bancha leaves.
+ingredients: Pure Bancha leaves.
 keywords: 'Smooth, Grassy, Relaxed, Bright, Refreshing'
 notes: >-
   Bancha has a truly unique and mild taste with a strong straw smell. It
