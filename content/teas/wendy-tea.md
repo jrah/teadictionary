@@ -7,9 +7,11 @@ description: >-
   soothing, caffeine-free Earl Grey tea. Can be enjoyed at any time of day but
   is absolutely perfect at bedtime and will leave you relaxed and uplifted.
   Increase your mindfulness with this lovely tea.
+image: /images/uploads/creativitea.png
 ingredients: >-
   Rooibos Earl Grey, Lavender Flowers, Rose Petals, Marigold Petals and
   Cornflower Petals
+keywords: 'Floral, Bright, Cheerful, Refreshing, Smooth'
 notes: >-
   Classic Earl Grey flavour with delicately fragrant petals of lavender, rose,
   marigold, and cornflower.
