@@ -1,12 +1,13 @@
 ---
 templateKey: tea.template
-title: Organic Strawberries & Cream Fruit Tea
+title: Strawberries & Cream Fruit Tea
 price: '6.00'
 description: >-
   Do you love strawberry and cream? We do too! Strawberries and cream is a
   favourite at Wimbledon, so we’ve captured the British summer (before it ends
   completely!) essence in this tea. Natural and organic flavours bring this
   delightful melange forward.
+image: /images/uploads/strawberrycreamfruit.png
 ingredients: >-
   dried apple pieces, strawberry pieces, vanilla pieces, raisins, beetroot,
   carrot, hibiscus blossoms & natural flavours.
