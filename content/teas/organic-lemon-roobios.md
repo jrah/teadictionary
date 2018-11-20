@@ -8,13 +8,15 @@ description: >-
   This one in particular is from the Cederberg mountains in South Africa,
   exclusively blended with the very finest organic ingredients. Highly
   recommended as a nightcap.
+image: /images/uploads/lemonrooibos.png
 ingredients: 'Luxury Rooibos, Lemongrass and Natural flavour.'
+keywords: 'Citrusy, Sweet, Astringent, Cheerful, Refreshing'
 notes: >-
   Rooibos is naturally sweet,yet the zesty citrus notes from the lemongrass make
   for a punchy, distinct flavor that delights the senses.
 guide: >-
-  Pour 95-100ºc water with one small teaspoon of “Organic Lemon Rooibos”, and
-  let it infuse for about 3-5 minutes.
+  Pour 95-100ºc water with one small teaspoon, and let it infuse for about 3-5
+  minutes.
 color: yellow
 volume: '10.0'
 carousel_images:
