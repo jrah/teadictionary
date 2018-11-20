@@ -15,9 +15,7 @@ keywords: 'Bright, Citrusy, Grassy, Refreshing, Smooth'
 notes: >-
   Strong ginger flavour, bringing a wonderful warmth and comforting experience,
   with a nice delicate pinch of citrus note from lemon and a cinnamon finish.
-guide: >-
-  Pour a cup of 100° C water with one teaspoon of "Tangawizi Lemon" and let
-  steep for 6-8 minutes.
+guide: Pour a cup of 100° C water with one teaspoon and let steep for 6-8 minutes.
 color: yellow
 volume: '13'
 carousel_images:
