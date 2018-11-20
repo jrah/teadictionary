@@ -15,9 +15,9 @@ notes: >-
   contains a pleasant, slightly grassy flavour which is beloved among tea lovers
   in general.
 guide: >-
-  Pour a cup of 70-80ºc water with one small teaspoon of “Organic Bancha Japan”,
-  and rinse the tea leaves and rest it for 2 minutes. Afterwards, pour another
-  cup of water and just infuse for about 30 seconds.
+  Pour a cup of 70-80ºc water with one small teaspoon, and rinse the tea leaves
+  and rest it for 2 minutes. Afterwards, pour another cup of water and just
+  infuse for about 30 seconds.
 color: green
 volume: '10.0'
 carousel_images:
