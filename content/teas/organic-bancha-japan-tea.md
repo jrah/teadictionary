@@ -7,7 +7,9 @@ description: >-
   Sencha. Bancha is harvested at the end of summer and beginning of autumn. It
   is often seen as the lowest grade of Japanese green tea on the market, yet is
   still regarded as an excellent daily tea.
+image: /images/uploads/japanesesenchagreentea.png
 ingredients: pure Bancha leaves.
+keywords: 'Smooth, Grassy, Relaxed, Bright, Refreshing'
 notes: >-
   Bancha has a truly unique and mild taste with a strong straw smell. It
   contains a pleasant, slightly grassy flavour which is beloved among tea lovers
