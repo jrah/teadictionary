@@ -9,10 +9,12 @@ description: >-
   been used in the past to strengthen the immune system and help fight off
   stress and disease. Pieces of freeze-dried passionfruit round off this healthy
   drink with a burst of fruity sweetness.
+image: /images/uploads/sencharedginseng.png
 ingredients: >-
   Green Tea, Ginseng Root, Flavouring, Safflowers, Freeze-Dried Passion Fruit
   Granules (Glucose Molasses (Wheat), Concentrated Passion Fruit Juice, Apricot
   Pulp, Modified Starch (Potato), Thickening Agent (E401))
+keywords: 'Fruity, Grassy, Malty, Woodsy, Coppery'
 notes: >-
   Hearty green tea combined with ginseng root, sweet passion fruit flavour and
   fragrant safflowers.
