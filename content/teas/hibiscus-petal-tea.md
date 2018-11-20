@@ -8,7 +8,9 @@ description: >-
   traditionally consumed by the Pharaohs in Ancient Egypt to help keep cool in
   the desert.Typically served cold with sugar, it is perfect to enjoy with spicy
   food. It is also very rich in antioxidants and vitamin C.
+image: /images/uploads/hibiscuspetals.png
 ingredients: Pure hibiscus petals
+keywords: 'Astringent, Berry, Bright, Cheerful, Citrusy'
 notes: 'Hibiscus flower petals provide a slightly tart, cranberry-like flavour.'
 guide: Steep one teaspoon in one cup of 100° C water for 3 minutes.
 color: purple
