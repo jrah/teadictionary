@@ -6,6 +6,7 @@ description: >-
   We’ve hidden a little festival surprise in this tea. Sourced and blended great
   ‘royal’ Chinese Sencha leaves and Japanese Bancha leaves, together with golden
   orange slices, tangy peppercorns and smooth almonds.
+image: /images/uploads/senchaalmondorange.png
 ingredients: >-
   Chinese Sencha leaves, Japanese Bancha leaves, Orange Slices, Flavouring,
   Sliced Almonds, Safflower, Pink Peppercorns.
