@@ -11,6 +11,7 @@ image: /images/uploads/strawberrycreamfruit.png
 ingredients: >-
   dried apple pieces, strawberry pieces, vanilla pieces, raisins, beetroot,
   carrot, hibiscus blossoms & natural flavours.
+keywords: 'Sweet, Berry, Fruity, Smooth, Relaxed'
 notes: >-
   Flavours of strawberries and a whiff of vanilla. This tea is naturally
   refreshing, sweet, fruity and has a distinct tang. Consumed hot or cold.
