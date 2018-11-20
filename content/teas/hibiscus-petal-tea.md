@@ -12,7 +12,7 @@ image: /images/uploads/hibiscuspetals.png
 ingredients: Pure hibiscus petals
 keywords: 'Astringent, Berry, Bright, Cheerful, Citrusy'
 notes: 'Hibiscus flower petals provide a slightly tart, cranberry-like flavour.'
-guide: Steep one teaspoon in one cup of 100° C water for 3 minutes.
+guide: Steep one teaspoon in one cup of 100°C water for 3 minutes.
 color: purple
 volume: '10.0'
 carousel_images:
