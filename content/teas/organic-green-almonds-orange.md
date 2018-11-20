@@ -10,6 +10,7 @@ image: /images/uploads/senchaalmondorange.png
 ingredients: >-
   Chinese Sencha leaves, Japanese Bancha leaves, Orange Slices, Flavouring,
   Sliced Almonds, Safflower, Pink Peppercorns.
+keywords: 'Sweet, Refreshing, Smooth, Fruity, Citrusy'
 notes: >-
   An amazing blend of Chinese Sencha and Japanese Bancha teas, with the sweet
   flavor of almonds and refreshing orange that tickles the taste buds.
