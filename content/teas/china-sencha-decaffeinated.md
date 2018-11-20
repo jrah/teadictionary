@@ -14,8 +14,8 @@ notes: >-
   Grassy with a light bitterness, with a surprisingly fresh taste. You can also
   trace a light sweetness and mild tang.
 guide: >-
-  Pour one cup of 70-80ºc water with one teaspoon of “China Sencha
-  Decaffeinated” tea and let steep for just 30 seconds.
+  Pour one cup of 70-80ºc water with one teaspoon and let steep for just 30
+  seconds.
 color: green
 volume: '10.0'
 carousel_images:
